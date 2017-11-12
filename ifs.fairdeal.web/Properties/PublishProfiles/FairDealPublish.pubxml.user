@@ -8,6 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Furquan\Projects\fairdeal\FairDealPublish</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/ifs.fairdeal.web.dll">
