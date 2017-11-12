@@ -46,13 +46,14 @@ h1,h2,h3,h4,h5,h6,label,p{
 .bottom-head {
 	text-align: center;
   	border-right:1px solid #EBEBEB;
-  	padding: 0; 
+  	padding: 0;
+    margin-left:3% ;
   	float: left;
-  	width: 14.285%;
+  	width: 35.285%;
 }
 .banner-bottom-top {
   	background-color: #F7F7F7;
-  	min-height: 96px;
+  	min-height: 80px;
 }
 .bottom-head:nth-child(7) {
 	border-right: none;
@@ -60,7 +61,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 .bottom-head a {
   	text-decoration: none;  	
   	display: block;	
-  	height: 120px;
+  	height: 80px;
     position: relative;
     transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -72,11 +73,11 @@ h1,h2,h3,h4,h5,h6,label,p{
 .buy-media{
 	position: absolute;
   bottom: 0;
-  height: 120px;
+  height: 80px;
   overflow: hidden;
   padding: 30px;
     width: 100%;
-  background-color: #fff;
+  background-color: #737473;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform .2s ease,height .2s ease;
@@ -85,23 +86,22 @@ h1,h2,h3,h4,h5,h6,label,p{
   transition: transform .2s ease,height .2s ease;
 }
 .bottom-head  h6{
-	font-size: 1em;
-	color:#919090;
+	color:#fff;
 	font-family: 'Montserrat-Regular';
-	margin: 0.5em 0 0;
+	font-size: 24px;
+    text-transform: uppercase;
 }
 
 .bottom-header{
 	position: relative;
 }
 .header-bottom {
-  	background-color: #fff;
     position: absolute;
   	z-index: 999;
     top: -24px;
   	width: 100%;
-    box-shadow: 0 0 4px rgba(164,164,164,.5);
 }
+/*
 .bottom-head a:hover .buy-media{
 	height:170px;
 	transition: 0.5s all;
@@ -117,7 +117,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 .bottom-head a:hover .buy-media h6{
 	color:#27da93;
-}
+}*/
 i.buy{
 	width: 32px;
 	height: 32px;
@@ -197,7 +197,7 @@ i.deal{
 }
 .logo h1 a{
 	text-decoration: none;
-	color:#5B05FE;
+	color:#83367F;
 }
 .right-icons li{
 	display: inline-block;
@@ -205,7 +205,7 @@ i.deal{
 .right-icons li span,.right-icons li a{
 	display: block;
 	font-size: 1em;
-	color:#5B05FE;
+	color:#83367F;
 	text-decoration: none;
 	margin: 0 0.3em;
 }
@@ -422,7 +422,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   	padding: 0 0 0.3em;
 }
 .caption h3 span{
-	border-bottom: 7px solid #27DA93;
+	border-bottom: 7px solid #83367F;
 }
 .caption p{
 	color: #fff;
