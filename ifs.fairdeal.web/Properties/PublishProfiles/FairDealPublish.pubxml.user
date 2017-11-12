@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ifs.fairdeal.web.dll">
+      <publishTime>10/28/2017 17:11:03</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="css/default.css">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="css/flexslider.css">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="css/popuo-box.css">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="css/styles.css">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/Montserrat-Regular.ttf">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="fonts/Oxygen-Regular.ttf">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="images/11.png">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="images/2.jpg">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="images/4.jpg">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="images/5.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ab.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ar.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/arr.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/arrow.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/at.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/at1.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/av.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ba.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ba1.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ba2.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ba3.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ba4.png">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/back1.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bl.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bl1.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bl2.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bo.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bo1.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bo2.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bo3.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/bo4.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ce.jpg">
+      <publishTime>09/24/2015 14:50:12</publishTime>
+    </File>
+    <File Include="images/ce1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ce2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ce3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ce4.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ce5.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci4.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci5.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci6.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ci7.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/co.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de10.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de11.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de4.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de5.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de6.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de7.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de8.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/de9.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ga.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ga1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ga2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ga3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ho1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/img-sprite.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg1.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg2.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg3.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg4.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg5.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg6.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg7.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg8.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lg9.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lo.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lo1.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/lo2.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pc1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pc2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pc3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pc4.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pc5.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ph1.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pi.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pi1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pi2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pi3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/pr.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb4.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb5.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sb6.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/search.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sl.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sl1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sl2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sl3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/sl4.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ss.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ss1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ss2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/ss3.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/star1.png">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/te.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/te1.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="images/te2.jpg">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/easyResponsiveTabs.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/jquery.flexisel.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/jquery.flexslider.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/jquery.magnific-popup.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/responsiveslides.min.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="js/scripts.js">
+      <publishTime>09/24/2015 14:50:14</publishTime>
+    </File>
+    <File Include="sample/about.html">
+      <publishTime>10/28/2017 17:04:48</publishTime>
+    </File>
+    <File Include="sample/blog.html">
+      <publishTime>10/28/2017 17:04:48</publishTime>
+    </File>
+    <File Include="sample/blog_single.html">
+      <publishTime>10/28/2017 17:04:48</publishTime>
+    </File>
+    <File Include="sample/buy.html">
+      <publishTime>10/28/2017 17:04:48</publishTime>
+    </File>
+    <File Include="sample/buy_single.html">
+      <publishTime>10/28/2017 17:02:47</publishTime>
+    </File>
+    <File Include="sample/career.html">
+      <publishTime>10/28/2017 17:02:47</publishTime>
+    </File>
+    <File Include="sample/contact.html">
+      <publishTime>10/28/2017 17:02:47</publishTime>
+    </File>
+    <File Include="sample/dealers.html">
+      <publishTime>10/28/2017 17:02:47</publishTime>
+    </File>
+    <File Include="sample/faqs.html">
+      <publishTime>10/28/2017 17:02:47</publishTime>
+    </File>
+    <File Include="sample/feedback.html">
+      <publishTime>10/28/2017 17:02:47</publishTime>
+    </File>
+    <File Include="sample/index.html">
+      <publishTime>10/28/2017 16:59:51</publishTime>
+    </File>
+    <File Include="sample/loan.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/loan_single.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/login.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/mobile_app.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/privacy.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/register.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/single.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/suggestion.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/terms.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/typo.html">
+      <publishTime>10/28/2017 16:58:16</publishTime>
+    </File>
+    <File Include="sample/w3layouts-License.txt">
+      <publishTime>09/24/2015 14:50:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/28/2017 17:11:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
