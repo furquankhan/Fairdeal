@@ -19,6 +19,38 @@
 <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+            Captcha();
+        });
+        function Captcha() {
+            debugger;
+            var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0','1','2','3','4','5','6','7','8','9');
+            var i;
+            for (i = 0; i < 4; i++) {
+                var a = alpha[Math.floor(Math.random() * alpha.length)];
+                var b = alpha[Math.floor(Math.random() * alpha.length)];
+                var c = alpha[Math.floor(Math.random() * alpha.length)];
+                var d = alpha[Math.floor(Math.random() * alpha.length)];
+            }
+            var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d ;
+            $("#mainCaptcha").val(code);
+        }
+        function ValidCaptcha() {
+            var string1 = removeSpaces($('#mainCaptcha').val());
+            var string2 = removeSpaces($('#txtInput').val());
+            if (string1 == string2) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function removeSpaces(string) {
+            return string.split(' ').join('');
+        }
+    </script>
 </head>
 <body>
 <!--header-->
@@ -197,72 +229,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <br />
                     <p>So if you feel you have it in you to be part of this dynamic organization, join us!</p>
 				</div>
+            
             <div class="userinput">
-                 <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                <form>
+                    <div class="form-group">
                         <label>Your Name (required)</label>
-                        <input type="text" id="username" placeholder="Your Name" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
-                        <label>Your Email (required)</label>
-                        <input type="text" id="useremail" placeholder="Your Email" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Your Name" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email (required)</label>
+                        <input type="text" placeholder="Your Email" class="form-control" id="useremail">
+                    </div>
+                    <div class="form-group">
                         <label>Your Mobile (required)</label>
-                        <input type="text" id="usermobile" placeholder="Your Mobile" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Your Mobile" class="form-control" id="usermobile">
+                    </div>
+                    <div class="form-group">
                         <label>Subject</label>
-                        <input type="text" id="usersubject" placeholder="Subject" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Subject" class="form-control" id="usersubject">
+                    </div>
+                    <div class="form-group">
                         <label>Position</label>
-                        <input type="text" id="userposition" placeholder="Postion" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Postion" class="form-control" id="userposition">
+                    </div>
+                    <div class="form-group">
                         <label>Preferred Salary</label>
-                        <input type="text" id="usersalary" placeholder="Preferred Salary" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Preferred Salary" class="form-control" id="usersalary">
+                    </div>
+                    <div class="form-group">
                         <label>Preferred Location</label>
-                        <input type="text" id="userlocation" placeholder="Preferred Location" class="form-control" />
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Preferred Location" class="form-control" id="userlocation">
+                    </div>
+                    <div class="form-group">
                         <label>Your Message</label>
-                        <br />
-                        <textarea type="text" id="usermessage" placeholder="Your Message" class="form-control"></textarea>
-                    </div><!-- /input-group -->
-                  </div><!-- /.col-xs-12 -->
-                </div><!-- /.row -->
+                        <textarea rows="5" placeholder="Your Message" class="form-control" id="usermessage" ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="mainCaptcha" />
+                        <input type="button" class="form-control" id="refresh" value="Refresh" onclick="Captcha();" />
+                    </div>
+                    <div class="=form-group">
+                        <input type="text" placeholder="Type Captcha Code Here" id="txtInput" />
+                    </div>
+                    <button type="submit" class="btn btn-default" onclick="alert(ValidCaptcha());">Submit</button>
+                </form>
             </div>
 		</div>
 	</div>
