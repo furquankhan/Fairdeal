@@ -174,6 +174,7 @@
     <Content Include="js\jquery.min.js" />
     <Content Include="js\responsiveslides.min.js" />
     <Content Include="js\scripts.js" />
+    <Content Include="js\taffy-min.js" />
     <Content Include="sample\about.html" />
     <Content Include="sample\blog.html" />
     <Content Include="sample\blog_single.html" />
@@ -196,7 +197,9 @@
     <Content Include="sample\terms.html" />
     <Content Include="sample\typo.html" />
     <Content Include="sample\w3layouts-License.txt" />
+    <Content Include="v1\about.html" />
     <Content Include="v1\index.html" />
+    <Content Include="v1\residential.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +217,7 @@
     <Content Include="fonts\Oxygen-Regular.ttf" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\PublishProfiles\FairDealPublish.pubxml" />
+    <Content Include="v1\data\projects.txt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,6 +228,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="v1\properties\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

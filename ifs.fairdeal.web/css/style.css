@@ -710,10 +710,10 @@ a.mask {
   	font-family: 'Montserrat-Regular';
 }
 .text-1 p {
-  	color: #a3a3a3;
-  	font-size: 0.9em;
+  	color: #000;
+  	font-size: 1.2em;
   	line-height: 2em;
-  	width:70%;
+  	width:85%;
 }
 .phone {
   	padding: 5em 0;
@@ -1088,7 +1088,8 @@ transform: rotatey(360deg);
 .banner-buying {
   background: url(../images/4.jpg) no-repeat;
   width: 100%;
-  min-height: 250px;
+  background-position:0px;
+  min-height: 320px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1105,7 +1106,7 @@ transform: rotatey(360deg);
   	margin-top: 1.8em;
 }
 .banner-buying h3 span{
-	border-bottom: 7px solid #27DA93;
+	border-bottom: 7px solid #83367F;
 }
 /*----*/
 .menu-right{
@@ -2167,12 +2168,43 @@ font-family: 'Montserrat-Regular';
 	text-decoration:none;
   	color: #27DA93;
 }
+.phone .container h1 {
+    font-size: 56px;
+    font-weight: bolder;
+}
+.about-bottom h1 {
+    color:white;
+    font-size:40px;
+    font-weight:bolder;
+
+}
+.about-bottom span{
+    color:white !important;
+    font-size:14px !important;
+
+}
+.about-bottom h4 {
+    color:white !important;
+    font-size:14px !important;
+
+}
 .about-in h6 a:hover{
   	color: #000;
 }
+.about-in ul {
+    list-style-type: disc;
+    font-size: 0.9em;
+    text-align:left;
+  	color: #000;
+  	padding: 0.3em 0 0;
+  	width: 66%;
+  	margin: 0 auto;
+  	line-height: 2em;
+}
 .about-in p{
 	font-size: 0.9em;
-  	color: #a3a3a3;
+    text-align:left;
+  	color: #000;
   	padding: 0.3em 0 0;
   	width: 70%;
   	margin: 0 auto;

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "XYZ",
+    "desc": "This is a land in andheri",
+    "city": "Mumbai",
+    "category": "Apartment",
+    "rooms": "2",
+    "price": "5.25",
+    "area": "502"
+  },
+  {
+    "id": 2,
+    "name": "ABC",
+    "desc": "This is a land in delhi",
+    "city": "Delhi",
+    "category": "Villa",
+    "rooms": "4",
+    "price": "18.25",
+    "area": "5000"
+  },
+  {
+    "id": 3,
+    "name": "QWE",
+    "desc": "This is a land in surat",
+    "city": "Surat",
+    "category": "Farm House",
+    "rooms": "4",
+    "price": "15.25",
+    "area": "3500"
+  },
+  {
+    "id": 4,
+    "name": "POR",
+    "desc": "This is a land in chembur",
+    "city": "Mumbai",
+    "category": "Apartment",
+    "rooms": "3",
+    "price": "15.25",
+    "area": "2500"
+  },
+  {
+    "id": 5,
+    "name": "ZXC",
+    "desc": "This is a land in blah blah",
+    "city": "Delhi",
+    "category": "Apartment",
+    "rooms": "5",
+    "price": "15.25",
+    "area": "6500"
+  },
+  {
+    "id": 6,
+    "name": "WED",
+    "desc": "This is a land in surat",
+    "city": "Surat",
+    "category": "Penthouse",
+    "rooms": "4",
+    "price": "15.25",
+    "area": "4500"
+  },
+  {
+    "id": 7,
+    "name": "SXC",
+    "desc": "This is a land in mumbai",
+    "city": "Mumbai",
+    "category": "Row house",
+    "rooms": "5",
+    "price": "12.25",
+    "area": "5400"
+  },
+  {
+    "id": 8,
+    "name": "XYZ",
+    "desc": "This is a land in andheri",
+    "city": "Mumbai",
+    "category": "Row House",
+    "rooms": "2",
+    "price": "11.25",
+    "area": "1500"
+  }
+]

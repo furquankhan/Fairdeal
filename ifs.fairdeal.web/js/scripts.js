@@ -4,3 +4,12 @@ $(window).load(function() {
     $('.pull').slideToggle();
   });
 });
+
+var api = {
+    call: function (method, info, success, error)
+    {
+
+    },
+    OnSuccess: function () { },
+    OnFail: function () { }
+}
