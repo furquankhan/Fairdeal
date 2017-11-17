@@ -198,6 +198,7 @@
     <Content Include="sample\typo.html" />
     <Content Include="sample\w3layouts-License.txt" />
     <Content Include="v1\about.html" />
+    <Content Include="v1\career.html" />
     <Content Include="v1\index.html" />
     <Content Include="v1\residential.html" />
     <Content Include="Web.config" />
