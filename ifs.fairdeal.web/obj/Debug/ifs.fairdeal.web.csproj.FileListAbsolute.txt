@@ -3,3 +3,9 @@ D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\bin\ifs.fairdeal.
 D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.csprojResolveAssemblyReference.cache
 D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.dll
 D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.pdb
+D:\projects\Fairdeal\ifs.fairdeal.web\bin\ifs.fairdeal.web.dll.config
+D:\projects\Fairdeal\ifs.fairdeal.web\bin\ifs.fairdeal.web.dll
+D:\projects\Fairdeal\ifs.fairdeal.web\bin\ifs.fairdeal.web.pdb
+D:\projects\Fairdeal\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.csprojResolveAssemblyReference.cache
+D:\projects\Fairdeal\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.dll
+D:\projects\Fairdeal\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.pdb
