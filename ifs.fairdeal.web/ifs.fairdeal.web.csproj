@@ -89,6 +89,7 @@
     <Content Include="images\bo2.jpg" />
     <Content Include="images\bo3.jpg" />
     <Content Include="images\bo4.jpg" />
+    <Content Include="images\captcha.JPG" />
     <Content Include="images\ce.jpg" />
     <Content Include="images\ce1.jpg" />
     <Content Include="images\ce2.jpg" />

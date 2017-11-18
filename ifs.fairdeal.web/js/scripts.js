@@ -1,9 +1,9 @@
 // navigation slide-in
-$(window).load(function() {
-  $('.nav_slide_button').click(function() {
-    $('.pull').slideToggle();
-  });
-});
+//$(window).load(function() {
+//  $('.nav_slide_button').click(function() {
+//    $('.pull').slideToggle();
+//  });
+//});
 
 var api = {
     callback: null,
