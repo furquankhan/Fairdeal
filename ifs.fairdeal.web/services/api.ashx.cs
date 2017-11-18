@@ -1,10 +1,21 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Script.Serialization;
+//using tcb.services;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Configuration;
+using System.Net.Mail;
+using System.Net;
+using System.Xml;
+using System.Collections;
+using System.Collections.Specialized;
 using Newtonsoft.Json;
 
 namespace ifs.fairdeal.web.services
@@ -23,8 +34,10 @@ namespace ifs.fairdeal.web.services
             var method = context.Request["method"];
             if (method == "save")
                 retval = save(context);
-            else if(method == "SendEmail")
+            else if (method == "SendEmail")
                 retval = SendEmail(context);
+            else if (method == "sendcareer")
+                retval = SendCareer(context);
             
             context.Response.Write(retval);
         }
@@ -48,6 +61,36 @@ namespace ifs.fairdeal.web.services
             return success(post.ToString());
             //return retval;
         }
+
+        public string SendCareer(HttpContext context)
+        {
+            var retVal = string.Empty;
+            var post = jsondata(context);
+            var username = post["username"].ToString();
+            var useremail = post["useremail"].ToString();
+            var usermobile = post["usermobile"].ToString();
+            var usersubject = post["usersubject"].ToString();
+            var userposition = post["userposition"].ToString();
+            var usersalary = post["usersalary"].ToString();
+            var userlocation = post["userlocation"].ToString();
+            var usermessage = post["usermessage"].ToString();
+
+            string gmailid = ConfigurationManager.AppSettings["emailid"].ToString();
+            string password = ConfigurationManager.AppSettings["password"].ToString();
+
+            MailAddress from = new MailAddress(gmailid, "The Fair Deal Team");
+            MailAddress to = new MailAddress("mfurquankhan7@gmail.com", "Furquan Khan");
+            MailMessage mailMessage2 = new MailMessage(from, to);
+            mailMessage2.Body = @"<h1>This is the body</h1>";
+            mailMessage2.Subject = "This is the subject";
+            mailMessage2.IsBodyHtml = true;
+            SmtpClient smtpClient = new SmtpClient();
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.Send(mailMessage2);
+
+            return retVal;
+        }
+
         public string SendEmail(HttpContext context)
         {
             var post = jsondata(context);
