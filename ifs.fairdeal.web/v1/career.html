@@ -37,10 +37,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             $("#mainCaptcha").text(code);
         }
         function ValidateForm(e) {
+            debugger;
             //e.preventDefault();
+            
             var username = $("#username").val();
             var useremail = $("#useremail").val();
             var usermobile = $("#usermobile").val();
+            var usersubject = $("#usersubject").val();
+            var userposition = $("#userposition").val();
+            var usersalary = $("#usersalary").val();
+            var userlocation = $("#userlocation").val();
+            var usermessage = $("#usermessage").val();
+
             var string1 = removeSpaces($('#mainCaptcha').text());
             var string2 = removeSpaces($('#txtInput').val());
             if (username == "" || username === undefined || username == null)
@@ -86,7 +94,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $("#MsgBoxBack").show();
                 return;
             }
+
+            var data = { "username": username, "useremail": useremail, "usermobile": usermobile, "usersubject": usersubject, "userposition": userposition, "usersalary": usersalary, "userlocation": userlocation, "usermessage": usermessage };
+            api.call("sendcareer", JSON.stringify(data), saveSuccess, saveFail);
         }
+        function saveSuccess(result) {
+            alert("success");
+        }
+        function saveFail(result)
+        { alert("fail"); }
         function closeMsg() {
             
             $("#MsgBoxBack").hide();
@@ -99,18 +115,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return re.test(email);
         }
-        function validatemobile(e)
+        function validatemobile(event)
         {
-            debugger;
-            var a = [];
-            var k = e.which;
+            debugger;// for trans-browser compatibility
+            var charCode = event.which || event.keyCode;
+            if (charCode != 8 && charCode != 0 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
 
-            for (i = 48; i < 58; i++)
-                a.push(i);
-
-            if (!(a.indexOf(k)>=0))
-                e.preventDefault();
+            return true;
         }
+        
     </script>
 </head>
 <style>
@@ -370,7 +385,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="form-group">
                             <label>Your Mobile (required)</label>
-                            <input type="text" placeholder="Your Mobile" onkeypress="validatemobile();" maxlength="10" pattern="[1-9]{1}[0-9]{9}" class="form-control" id="usermobile">
+                            <input type="text" placeholder="Your Mobile" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" class="form-control" id="usermobile">
                         </div>
                         <div class="form-group">
                             <label>Subject</label>
