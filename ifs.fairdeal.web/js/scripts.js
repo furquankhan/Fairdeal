@@ -13,7 +13,7 @@ var api = {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             type: 'POST',
-            data: info,
+            data: JSON.stringify(info),
             responseType: "json",
             success: function (result) {
                 debugger;

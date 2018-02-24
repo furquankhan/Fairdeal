@@ -36,7 +36,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d;
             $("#mainCaptcha").text(code);
         }
+        function submitform(e)
+        {
+            debugger;
+            if (ValidateForm(e)) {
+                var username = $('#username').val();//required
+                var useremail = $('#useremail').val();//required
+                var usermobile = $('#usermobile').val();//required
+                var usersubject = $('#usersubject').val();
+                var userposition = $('#userposition').val();
+                var usersalary = $('#usersalary').val();
+                var userlocation = $('#userlocation').val();
+                var usermessage = $('#usermessage').val();
+                var json = { "username": username, "useremail": useremail, "usermobile": usermobile, "usersubject": usersubject, "userposition": userposition, "usersalary": usersalary, "userlocation": userlocation, "usermessage": usermessage };
+                api.call("sendcareer", json, submitSuccess, submitFailure);
+            }
+        }
+        function submitSuccess(result)
+        { debugger;}
+        function submitFailure(error)
+        { debugger;}
         function ValidateForm(e) {
+            return true;
             //e.preventDefault();
             var username = $("#username").val();
             var useremail = $("#useremail").val();
@@ -48,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $(".MsgTitle").text("Error");
                 $(".pText").text("Please enter your name.");
                 $("#MsgBoxBack").show();
-                return;
+                return false;
             }
             else if (useremail == "" || useremail === undefined || useremail == null)
             {
@@ -56,36 +77,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 $(".MsgTitle").text("Error");
                 $(".pText").text("Please enter email.");
                 $("#MsgBoxBack").show();
-                return;
+                return false;
             }
             else if(!validateEmail(useremail))
             {
                 $(".MsgTitle").text("Error");
                 $(".pText").text("Please enter valid email.");
                 $("#MsgBoxBack").show();
-                return;
+                return false;
             }
             else if (usermobile == "" || usermobile === undefined || usermobile == null)
             {
                 $(".MsgTitle").text("Error");
                 $(".pText").text("Please enter mobile no.");
                 $("#MsgBoxBack").show();
-                return;
+                return false;
             }
             else if (string2 == "" || string2 == null || string2 === undefined)
             {
                 $(".MsgTitle").text("Error");
                 $(".pText").text("Please enter captcha code");
                 $("#MsgBoxBack").show();
-                return;
+                return false;
             }
             else if(string1 != string2){
                 
                 $(".MsgTitle").text("Error");
                 $(".pText").text("You entered an invalid captcha. Please re-enter valid captcha.");
                 $("#MsgBoxBack").show();
-                return;
+                return false;
             }
+            return true;
         }
         function closeMsg() {
             
@@ -401,7 +423,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Type Captcha Code Here" id="txtInput" />
                         </div>
-                        <button type="button" id="submit" onclick="ValidateForm();" class="btn btn-primary">Submit</button>
+                        <button type="button" id="submit" onclick="submitform();" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
@@ -492,4 +514,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!--//footer-->
 </body>
+    
 </html>
