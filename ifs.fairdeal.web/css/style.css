@@ -3,6 +3,20 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+
+.list {
+    display: flex;
+  justify-content: center;
+}
+    .list li {
+        list-style:disc;
+        color:#a3a3a3;
+    }
+    .list ul {
+        list-style:disc;
+    }
+
 .userinput{
     font-size: 0.9em;
     text-align: left;
@@ -1684,32 +1698,32 @@ option.rm{
 }
 .middle-side p span.bath{
 	color:#000;
-	margin: 0 51% 0 0;
+	margin: 0 30% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath1{
 	color:#000;
-	margin: 0 47% 0 0;
+	margin: 0 7% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath2{
 	color:#000;
-	margin: 0 32% 0 0;
+	margin: 0 13% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath3{
 	color:#000;
-	margin: 0 40% 0 0;
+	margin: 0 15% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath4{
 	color:#000;
-	margin: 0 26% 0 0;
+	margin: 0 8% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.bath5{
 	color:#000;
-	margin: 0 50% 0 0;
+	margin: 0 17% 0 0;
 	font-weight: bold;
 }
 .middle-side p span.two{

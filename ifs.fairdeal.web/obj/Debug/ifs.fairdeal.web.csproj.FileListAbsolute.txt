@@ -13,3 +13,5 @@ D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\bin\Newtonsoft.Js
 D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\bin\Newtonsoft.Json.xml
 D:\projects\Fairdeal\ifs.fairdeal.web\bin\Newtonsoft.Json.dll
 D:\projects\Fairdeal\ifs.fairdeal.web\bin\Newtonsoft.Json.xml
+D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\bin\ifs.fairdeal.web.dll.config
+D:\Furquan\Projects\fairdeal\ifs.fairdeal.web\ifs.fairdeal.web\obj\Debug\ifs.fairdeal.web.csproj.CoreCompileInputs.cache

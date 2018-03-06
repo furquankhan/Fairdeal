@@ -1,82 +1,367 @@
-[
-  {
-    "id": 1,
-    "name": "XYZ",
-    "desc": "This is a land in andheri",
-    "city": "Mumbai",
-    "category": "Apartment",
-    "rooms": "2",
-    "price": "5.25",
-    "area": "502"
-  },
-  {
-    "id": 2,
-    "name": "ABC",
-    "desc": "This is a land in delhi",
-    "city": "Delhi",
-    "category": "Villa",
-    "rooms": "4",
-    "price": "18.25",
-    "area": "5000"
-  },
-  {
-    "id": 3,
-    "name": "QWE",
-    "desc": "This is a land in surat",
-    "city": "Surat",
-    "category": "Farm House",
-    "rooms": "4",
-    "price": "15.25",
-    "area": "3500"
-  },
-  {
-    "id": 4,
-    "name": "POR",
-    "desc": "This is a land in chembur",
-    "city": "Mumbai",
-    "category": "Apartment",
-    "rooms": "3",
-    "price": "15.25",
-    "area": "2500"
-  },
-  {
-    "id": 5,
-    "name": "ZXC",
-    "desc": "This is a land in blah blah",
-    "city": "Delhi",
-    "category": "Apartment",
-    "rooms": "5",
-    "price": "15.25",
-    "area": "6500"
-  },
-  {
-    "id": 6,
-    "name": "WED",
-    "desc": "This is a land in surat",
-    "city": "Surat",
-    "category": "Penthouse",
-    "rooms": "4",
-    "price": "15.25",
-    "area": "4500"
-  },
-  {
-    "id": 7,
-    "name": "SXC",
-    "desc": "This is a land in mumbai",
-    "city": "Mumbai",
-    "category": "Row house",
-    "rooms": "5",
-    "price": "12.25",
-    "area": "5400"
-  },
-  {
-    "id": 8,
-    "name": "XYZ",
-    "desc": "This is a land in andheri",
-    "city": "Mumbai",
-    "category": "Row House",
-    "rooms": "2",
-    "price": "11.25",
-    "area": "1500"
-  }
-]
+{
+  "country": [
+    {
+      "id": 1,
+      "name": "Kenya"
+    }
+  ],
+  "city": [
+    {
+      "id": 1,
+      "countryid": 1,
+      "name": "Mombasa"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Apartment"
+    },
+    {
+      "id": 2,
+      "name": "Independant House"
+    },
+    {
+      "id": 3,
+      "name": "Row House"
+    },
+    {
+      "id": 4,
+      "name": "Villa"
+    },
+    {
+      "id": 5,
+      "name": "Bulder Floor"
+    },
+    {
+      "id": 6,
+      "name": "Farm House"
+    },
+    {
+      "id": 7,
+      "name": "Pent House"
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "type": "residential",
+      "launchdate": "March 2018",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "BAMBURI COCONUT VILLAS, BAMBURI MOMBASA",
+      "desc": "<p>Welcome to Bamburi Coconut Villas where peace and happiness is the by-product of this one of a kind project. It is in harmony with your dreams and enable you to build a relationship with nature as well as your neighbors. The architecture of this project creatively blends contemporary style with the combination of luxurious lifestyle amenities making this an ideal dwelling for its residents. The project offers spacious and well-designed 3BR and 4BR townhouse, to provide you with outmost comfort and quality living standards. Surrounded by regal architecture, absolute privacy, a green landscape and the finest of modern facilities which will give you a royal feel. It is well planned and is built with all modern construction methods. The project offers 11 units of 3BR and 9 units of 4BR.</p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "4(55 * 37)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Built-in wardrobes","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":5,
+	  "propertimage":"images/property2/1.jpg"
+    },
+    {
+      "id": 2,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 3",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":3,
+	  "propertimage":"images/property2/1.jpg"
+    },
+	{
+      "id": 3,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 2",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":2,
+	  "propertimage":"images/property2/1.jpg"
+    },
+	{
+      "id": 4,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 1",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":1,
+	  "propertimage":"images/property2/1.jpg"
+    },
+	{
+      "id": 5,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 5",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":5,
+	  "propertimage":"images/property2/1.jpg"
+    },
+	{
+      "id": 6,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 3",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":3,
+	  "propertimage":"images/property2/1.jpg"
+    },
+	{
+      "id": 7,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 5",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":5,
+	  "propertimage":"images/property2/1.jpg"
+    },
+	{
+      "id": 8,
+      "type": "residential",
+      "launchdate": "2014",
+      "area": "502",
+      "areain": "Sq. ft",
+      "kshin": "Millions",
+      "countryid": 1,
+      "cityid": 1,
+      "name": "ZAWADI APARTMENTS 3",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "category": "Apartment",
+      "propertydetails": [
+        {
+          "br": "2(53 * 31)",
+          "builtuparea": 1665,
+          "plotarea": 1633,
+          "groundarea": 662,
+          "upperarea": 1003,
+          "ksh": 10.5
+        },
+        {
+          "br": "3(53 * 31)",
+          "builtuparea": 2447,
+          "plotarea": 2031,
+          "groundarea": 1231,
+          "upperarea": 1261,
+          "ksh": 12.5
+        }
+      ],
+	  "additionaldetails":
+	  {
+		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
+		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
+		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+	  },
+	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+	  "rating":3,
+	  "propertimage":"images/property2/1.jpg"
+    }
+  ]
+}

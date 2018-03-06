@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Buy :: w3layouts</title>
+<title>Fair Deal | Residential</title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../js/jquery.min.js"></script>
@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
+<script src="../js/angular.min.js"></script>
 </head>
 <body>
 <!--header-->
@@ -54,9 +54,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul class="right-icons">
 				<li><a  href="index.html">Home</a></li>
 						<li><a  href="about.html">About Us</a></li>
-						<li><a  href="blog.html">Properties</a></li>
-						<li><a  href="terms.html">Contact Us</a></li>
-						<li><a  href="privacy.html">Careers</a></li>
+						<li><a  href="property.html?pid=1">Properties</a></li>
+						<li><a  href="contact.html">Contact Us</a></li>
+						<li><a  href="career.html">Careers</a></li>
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				
 			</ul>
@@ -335,7 +335,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid-lo">
 					<a href="buy_residential.html">
 						<figure class="effect-layla">
-						<img class=" img-responsive" src="images/ce.jpg" alt="img06">
+						<img class=" img-responsive" src="../images/ce.jpg" alt="img06">
 						<figcaption>
 							<h4>London</h4>
 							
@@ -348,7 +348,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid-lo">
 						<a href="buy_residential.html">
 					<figure class="effect-layla">
-						<img class=" img-responsive" src="images/ce1.jpg" alt="img06">
+						<img class=" img-responsive" src="../images/ce1.jpg" alt="img06">
 						<figcaption>
 							<h4>Sydney</h4>
 							
@@ -363,7 +363,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" grid-lo">
 							<a href="buy_residential.html">
 					<figure class="effect-layla">
-						<img class=" img-responsive" src="images/ce2.jpg" alt="img06">
+						<img class=" img-responsive" src="../images/ce2.jpg" alt="img06">
 						<figcaption>
 							<h4 class="effect1">New York</h4>
 							
@@ -376,7 +376,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 	<div class=" grid-lo">
 				 			<a href="buy_residential.html">
 					<figure class="effect-layla">
-						<img class=" img-responsive" src="images/ce3.jpg" alt="img06">
+						<img class=" img-responsive" src="../images/ce3.jpg" alt="img06">
 						<figcaption>
 							<h4 class="effect2">Rome</h4>
 							
@@ -392,7 +392,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" grid-lo">
 							<a href="buy_residential.html">
 					<figure class="effect-layla">
-						<img class="img-responsive" src="images/ce4.jpg" alt="img06">
+						<img class="img-responsive" src="../images/ce4.jpg" alt="img06">
 						<figcaption>
 							<h4 class="effect3">Singapore</h4>
 							
@@ -405,7 +405,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 	<div class=" grid-lo">
 				 			<a href="buy_residential.html">
 					<figure class="effect-layla">
-						<img class="img-responsive" src="images/ce5.jpg" alt="img06">
+						<img class="img-responsive" src="../images/ce5.jpg" alt="img06">
 						<figcaption>
 							<h4 class="effect3">Paris</h4>
 							
@@ -592,8 +592,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!--//footer-->
+
+    <div ng-app='app' ng-controller='mainCtrl'>
+    {{ctrlTest}}<hr />
+    Ng-Repeat<hr />
+    <div ng-repeat="json in myJson">
+        <li>{{json}}</li>
+    </div>
+    <hr />
+    Quick-Ng-Repeat<hr />
+    <div quick-ng-repeat="json in myJson" quick-repeat-list='myJson'>
+        <li>{{json}}</li>
+    </div>
+
+    </div>
 </body>
 <script src="../js/taffy-min.js"></script>
+
 <script type="text/javascript">
     var datadb;
     $(document).ready(function () {
@@ -611,10 +626,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 console.log("Json Data");
                 console.log(json);
                 var strJson = JSON.stringify(json);
-                datadb = TAFFY(strJson);
-                loadProjects();
+                //datadb = TAFFY(strJson);
+                //loadProjects();
+                testangularjs(json);
             }
         });
+    }
+    function testangularjs(json)
+    {
+        var properties = json.properties;
+        angular.module('app', ['QuickList']).controller('mainCtrl', function ($scope) {
+            $scope.ctrlTest = "Applying";
+            $scope.myJson = ["mayank1", "mayank2", "mayank3", "mayank4", "mayank5", "mayank6", "mayank7", "mayank8", "mayank9"]
+            $scope.jsons = function () {
+                console.log('callback called');
+            }
+        })
     }
     function loadProjects()
     {

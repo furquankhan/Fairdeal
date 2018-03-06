@@ -287,6 +287,7 @@
     <Content Include="images_old\te.jpg" />
     <Content Include="images_old\te1.jpg" />
     <Content Include="images_old\te2.jpg" />
+    <Content Include="js\angular.min.js" />
     <Content Include="js\easyResponsiveTabs.js" />
     <Content Include="js\jquery.flexisel.js" />
     <Content Include="js\jquery.flexslider.js" />
@@ -317,13 +318,18 @@
     <Content Include="sample\terms.html" />
     <Content Include="sample\typo.html" />
     <Content Include="sample\w3layouts-License.txt" />
+    <Content Include="test.html" />
     <Content Include="v1\about.html" />
     <Content Include="v1\career.html" />
     <Content Include="v1\contact.html" />
+    <Content Include="v1\images\property1\1.jpg" />
+    <Content Include="v1\images\property1\2.jpg" />
+    <Content Include="v1\images\property1\3.jpg" />
+    <Content Include="v1\images\property1\4.jpg" />
     <Content Include="v1\index.html" />
     <Content Include="v1\landing.html" />
     <Content Include="v1\residential.html" />
-    <Content Include="v1\buy_residential.html" />
+    <Content Include="v1\property.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -348,6 +354,11 @@
     <None Include="Properties\PublishProfiles\FairDealPublish.pubxml" />
     <Content Include="v1\data\projects.txt" />
     <Content Include="services\api.ashx" />
+    <Content Include="v1\images\property1\Bamburi Coconut Villas site plan.pdf" />
+    <Content Include="v1\images\property1\town houses 4 Bedroom. Ground Floor.pdf" />
+    <Content Include="v1\images\property1\town houses _ 3 bedroom first floor.pdf" />
+    <Content Include="v1\images\property1\town houses _ 3 bedroom ground.pdf" />
+    <Content Include="v1\images\property1\town houses _ 4 bedroom first floor.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
