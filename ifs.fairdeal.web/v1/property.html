@@ -170,7 +170,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--initiate accordion-->
 			<script type="text/javascript">
 				$(function () {
-					debugger;
 					var menu_ul = $('.menu > li > ul'),
 						menu_a = $('.menu > li > a');
 					menu_ul.hide();
@@ -429,13 +428,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="featuredpropsstruct" style="display:none;">
 		<div class="single-box-img">
 			<div class="box-img">
-				<a href="#">
+				<a href="property.html?pid={PROPERTYID}">
 					<img class="img-responsive" src="{IMAGESRC}" alt="">
 				</a>
 			</div>
 			<div class="box-text">
-				<p><a href="#">{PROPERTYNAME}</a></p>
-				<a href="#" onclick="loadProperty('{PROPERTYID}')" class="in-box">More Info</a>
+				<p><a href="property.html?pid={PROPERTYID}">{PROPERTYNAME}</a></p>
+				<a href="property.html?pid={PROPERTYID}" class="in-box">More Info</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -443,11 +442,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--//footer-->
 	<script>
 
-		$(function () { });
 		$(document).ready(function () {
 			loadJSON();
 		});
 		function loadJSON() {
+			debugger;
 			$.ajax({
 				url: "data/projects.txt",
 				dataType: "text",
@@ -461,6 +460,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}
 		function loadProperty(propertyId) { alert(propertyId); }
 		function bindProperty(propertyId, properties) {
+			debugger;
 			var property = {};
 			$.each(properties, function (index, value) {
 				if (value.id == propertyId) {
@@ -579,7 +579,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			var ratingSortedProps = sortProperties(properties, 'rating', false);
 			var _html = '';
 			$.each(ratingSortedProps, function (index, value) {
-				_html += $(".featuredpropsstruct").html().replace("{IMAGESRC}", value.propertimage).replace("{PROPERTYNAME}", value.name).replace("{PROPERTYID}", value.id);
+				if (index < 5)
+					_html += $(".featuredpropsstruct").html()
+						.replace("{IMAGESRC}", value.propertimage)
+						.replace("{PROPERTYNAME}", value.name)
+						.replace(new RegExp("{PROPERTYID}", "gm"), value.id);
+				else
+					return false;
 			});
 			$("#featuredproperties").html(_html);
 		}
@@ -606,35 +612,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<style>
 
-		.scrollbar {
-			margin-left: 30px;
-			float: left;
-			height: 570px;
-			width: auto;
-			background: #F5F5F5;
-			overflow-y: scroll;
-			margin-bottom: 25px;
-		}
-
-		.force-overflow {
-			min-height: 100px;
-		}
-		.force-overflow::-webkit-scrollbar-track {
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-			border-radius: 10px;
-			background-color: #F5F5F5;
-		}
-
-		.force-overflow::-webkit-scrollbar {
-			width: 12px;
-			background-color: #F5F5F5;
-		}
-
-		.force-overflow::-webkit-scrollbar-thumb {
-			border-radius: 10px;
-			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-			background-color: #D62929;
-		}
+		
 	</style>
 </body>
     
