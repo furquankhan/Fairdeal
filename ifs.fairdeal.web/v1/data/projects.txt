@@ -123,126 +123,220 @@
 	  "rating":3,
 	  "propertimage":"images/property2/1.jpg"
     },
-	{
-      "id": 3,
-      "type": "residential",
-      "launchdate": "2014",
-      "area": "502",
-      "areain": "Sq. ft",
-      "kshin": "Millions",
-      "countryid": 1,
-      "cityid": 1,
-      "name": "ZAWADI APARTMENTS 2",
-      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
-      "category": "Apartment",
-      "propertydetails": [
-        {
-          "br": "2(53 * 31)",
-          "builtuparea": 1665,
-          "plotarea": 1633,
-          "groundarea": 662,
-          "upperarea": 1003,
-          "ksh": 10.5
-        },
-        {
-          "br": "3(53 * 31)",
-          "builtuparea": 2447,
-          "plotarea": 2031,
-          "groundarea": 1231,
-          "upperarea": 1261,
-          "ksh": 12.5
-        }
-      ],
-	  "additionaldetails":
-	  {
-		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
-		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
-		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
-	  },
-	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
-	  "rating":2,
-	  "propertimage":"images/property2/1.jpg"
+{
+  "id": 3,
+  "type": "residential",
+  "launchdate": "2018",
+  "area": "502",
+  "areain": "Sq. ft",
+  "kshin": "Millions",
+  "countryid": 1,
+  "cityid": 1,
+  "name": "Parkland Square Nairobi",
+  "desc": "<h3>A luxury lifestyle apartment bringing you the very best & affordable things in your life!\n\n</h3><p>Exclusive Grandeur Living at Parklands Square! Don't just take our word for it!  The Project is Located on 4th Parklands Avenue next to High ridge primary school, near to Diamond Plaza.</p><p>Parklands Square is a gated residential community of 3 BHK and 4 BHK spacious apartments. It consists of a total of 34 large size flats.</p><p>Parklands Square is a gated community of conveniently located flats in Parklands on 4th Avenue, Adjacent to High ridge Primary School, just 2 min walking distance from Diamond Plaza.  Parklands is an ideal location closer to Westlands and Town.</p><p>This residential complex consists of a one towers with 9 residential floors. A well planned parking ensures adequate parking space for all. Parkland Square has a unique design where in each floor beautifully accommodates just four large luxurious flats with two lifts. This ensures a clutter free living. A designer elevation gives this building a flawless identity. This building is supported by 2 elevators. All lifts and common area lights are with a full power backup.\n\n</p>",
+  "category": "Apartment",
+  "propertydetails": [
+    {
+      "br": 3,
+      "builtuparea": 2000,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 21,
+      "rent": "80,000"
     },
-	{
-      "id": 4,
-      "type": "residential",
-      "launchdate": "2014",
-      "area": "502",
-      "areain": "Sq. ft",
-      "kshin": "Millions",
-      "countryid": 1,
-      "cityid": 1,
-      "name": "ZAWADI APARTMENTS 1",
-      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
-      "category": "Apartment",
-      "propertydetails": [
-        {
-          "br": "2(53 * 31)",
-          "builtuparea": 1665,
-          "plotarea": 1633,
-          "groundarea": 662,
-          "upperarea": 1003,
-          "ksh": 10.5
-        },
-        {
-          "br": "3(53 * 31)",
-          "builtuparea": 2447,
-          "plotarea": 2031,
-          "groundarea": 1231,
-          "upperarea": 1261,
-          "ksh": 12.5
-        }
-      ],
-	  "additionaldetails":
-	  {
-		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
-		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
-		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
-	  },
-	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
-	  "rating":1,
-	  "propertimage":"images/property2/1.jpg"
+    {
+      "br": 4,
+      "builtuparea": 2454,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 25,
+      "rent": "110,000 "
     },
+    {
+      "br": 4,
+      "builtuparea": 2282,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 23,
+      "rent": "100,000"
+    }
+  ],
+  "additionaldetails": {
+    "header": "The project Amenities Include:",
+    "left": [
+      "Borehole",
+      "Fitted Wardrobes",
+      "Fitted Kitchen Cabinets",
+      "Spacious Living Area",
+      "UPVC Windows",
+      "Perimeter Wall"
+    ],
+    "right": [
+      "Security Fencing",
+      "24/7 CCTV",
+      "Paved Parking Area",
+      "Back – Generator for Common Areas",
+      "UPVC Windows",
+      "Lift"
+    ]
+  },
+  "mapembedurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+  "rating": 2,
+  "propertimage": "images/property2/1.jpg"
+},
 	{
-      "id": 5,
-      "type": "residential",
-      "launchdate": "2014",
-      "area": "502",
-      "areain": "Sq. ft",
-      "kshin": "Millions",
-      "countryid": 1,
-      "cityid": 1,
-      "name": "ZAWADI APARTMENTS 5",
-      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
-      "category": "Apartment",
-      "propertydetails": [
-        {
-          "br": "2(53 * 31)",
-          "builtuparea": 1665,
-          "plotarea": 1633,
-          "groundarea": 662,
-          "upperarea": 1003,
-          "ksh": 10.5
-        },
-        {
-          "br": "3(53 * 31)",
-          "builtuparea": 2447,
-          "plotarea": 2031,
-          "groundarea": 1231,
-          "upperarea": 1261,
-          "ksh": 12.5
-        }
-      ],
-	  "additionaldetails":
-	  {
-		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
-		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
-		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
-	  },
-	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
-	  "rating":5,
-	  "propertimage":"images/property2/1.jpg"
+  "id": 4,
+  "type": "residential",
+  "launchdate": "2014",
+  "area": "502",
+  "areain": "Sq. ft",
+  "kshin": "Millions",
+  "countryid": 1,
+  "cityid": 1,
+  "name": "AZALEA HEIGHTS. .",
+  "desc": "<p>AZALEA HEIGHTS is another spectacular project from Fairdeal Properties Kenya offering luxury apartments at General Mathenge drive, Nairobi, Kenya. AZALEA HEIGHTS  has been aesthetically designed to let you enjoy the large living spaces in luxury and style. All the apartments of this project exude luxury and exemplify magnificence. The apartments are available in 3 BHK configurations with DSQ. Ground & Mezzanine floor being the commercial while first floor onwards has residential units with four wings ie. Wing A, Wing B, Wing C and Wing D. Basement 1 and Basement 2 are parking for the project. On the fifth & tenth floor, there is a bridge to interconnect two blocks (during time of breakdown of lift, the same can be used).  There are four penthouses for luxurious homes.</p><p>This semi commercial cum residential project is developed on 1 acre land at General Mathenge drive, Nairobi. Equal focus on design has been given to each 3 BHK apartments in this project to ensure that the residents enjoy the magnificence of this project</p><p>AZALEA HEIGHTS is strategically located at General Mathenge drive, within drive proximity to Business District and nearby prominent educational institutions, hospitals, shopping malls, religious centres, community gathering places and other necessary lifestyle infrastructure.</p><p>Thus an unbeatable combination of luxury and convenience makes this property the most desirable home in Nairobi</p>",
+  "category": "Apartment",
+  "propertydetails": [
+    {
+      "br": 3,
+      "builtuparea": 2400,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 24
     },
+    {
+      "br": "Penthouse",
+      "builtuparea": 5000,
+      "ksh": 50
+    }
+  ],
+  "additionaldetails": {
+    "header": "Amenities :",
+    "left": [
+      "Aerobics/Yoga Room",
+      "Indoor Games Hall",
+      "Indoor Games Hall",
+      "Gymnasium",
+      "Covered  heated Swimming Pool with associated change rooms and toilets",
+      "Children’s Play Area"
+    ],
+    "right": [
+      "Provision for Restaurant",
+      "Shops / Offices",
+      "Provision for Super Market",
+      "Theatre room / Entertainment Room",
+      "2 car park per apartment",
+      "Borehole"
+    ]
+  },
+  "mapembedurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+  "rating": 1,
+  "propertimage": "images/property4/1.jpg"
+},
+	{
+  "id": 5,
+  "type": "residential",
+  "launchdate": "2019",
+  "area": "502",
+  "areain": "Sq. ft",
+  "kshin": "Millions",
+  "countryid": 1,
+  "cityid": 1,
+  "name": " KISIMANI HEIGHTS",
+  "desc": "<p>Kisimani Heights apartments located at KISIMANI, behind Mary Joy Primary School, Mombasa Malindi Road in Bombolulu area of  Mombasa. It is a residential tower of 9 floors having following configurations of bedrooms.  They have been designed carefully taking into consideration modern living aspirations and creating the homely feeling with spacious unit sizes & conveniently designed floor-plans.</p>",
+  "category": "Apartment",
+  "propertydetails": [
+    {
+      "br": "Studio Apt",
+      "builtuparea": 430,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 2.2,
+      "rent": ""
+    },
+    {
+      "br": "Studio Apt",
+      "builtuparea": 450,
+      "ksh": 2.4
+    },
+    {
+      "br": "Studio Apt",
+      "builtuparea": 500,
+      "ksh": 2.7
+    },
+    {
+      "br": 1,
+      "builtuparea": 660,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 3.5,
+      "rent": "10,000 -  15,000",
+      "floor": "2nd"
+    },
+    {
+      "br": 2,
+      "builtuparea": 1000,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 4.9,
+      "rent": "18,000 - 23,000",
+      "floor": "3rd  to 9th "
+    },
+    {
+      "br": 3,
+      "builtuparea": 1200,
+      "plotarea": "",
+      "groundarea": "",
+      "upperarea": "",
+      "ksh": 5.5,
+      "rent": "25,000 - 28,000",
+      "floor": "3rd  to 9th "
+    }
+  ],
+  "additionaldetails": {
+    "header": "The amenities are excellent in this project and is ideal for investment. They are-",
+    "left": [
+      "Located Strategically on peaceful & green environment.\n",
+      "The Project is behind Mary Joy Primary school.",
+      "2 Way access to the Project via – Mombasa Malindi Road and Mary joy School Road.",
+      "Church and Mosque at a walking distance away.",
+      "Public Beaches is at a short driving distance of 15 Minutes.",
+      "Promising commercial area and residential developments happening around.",
+      "Easy access to Public Transport and connection to prominent shopping destination.",
+      "Great Potential for Appreciation of property value.",
+      "Near to City Mall, Nakumatt, Naivas, Cinemax.",
+      "Free from day to day traffic and crowd.",
+      "Quality construction by experienced contracting firm.",
+      "Project by team of experts of their respective fields on board.",
+      "24 hours Modern Security services"
+    ],
+    "right": [
+      "Borehole Water",
+      "Car Parking for 2 & 3 BR",
+      "Lift",
+      "Staircase",
+      "Wardrobes",
+      "UPVC windows",
+      "Security Fencing",
+      "Perimeter Wall",
+      "Fairdeal Shopping Centre in Vicinity",
+      "Playing ground nearby to project location",
+      "Architecturally well designed plan for ample light and air",
+      "Roof top Swimming Pool",
+      "Utility area"
+    ]
+  },
+  "mapembedurl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
+  "rating": 5,
+  "propertimage": "images/property5/1.jpg"
+},
 	{
       "id": 6,
       "type": "residential",
