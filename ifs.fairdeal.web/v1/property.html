@@ -295,6 +295,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 
 
+
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12 property3-extradetails" style="display:none;">
+						<h4 style="font-weight:bold;">The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<h5>SCHOOLS ( within1.3 km)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nyali School</li>
+								<li><i></i>Nyali Acadamy Senior School</li>
+								<li><i></i>Nyali High School</li>
+								<li><i></i>Shree Swami Narayan School</li>
+								<li><i></i>5 Star of David Christian School</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>RECREATION AREAS (800m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nyali golf club</li>
+								<li><i></i>Bahari Beach</li>
+								<li><i></i>Reef Hotel</li>
+								<li><i></i>Hallar Park</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>HOSPITALS (700 m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Aga khan Hospital Centre</li>
+								<li><i></i>Swiss Cottage Hospital</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>SHOPPING DESTINATION (300 m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nakumatt City Mall</li>
+								<li><i></i>Naivas</li>
+							</ul>
+						</div>
 					</div>
 					<div class="clearfix"></div><br />
 					<div class="col-sm-12">
@@ -469,25 +508,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				}
 			});
 			$('#propertyname').html(property.name);
-			$('#propertydetails').html(gettablehtml(property.propertydetails));
+			$('#propertydetails').html(gettablehtml(property.propertydetails, property.onrent));
 			$('#propertydescription').html(property.desc);
 			$('#propertymap').attr('src', property.mapembedurl);
 			bindImages(propertyId);
 			bindAdditionalDetails(property.additionaldetails);
 			bindFeaturedProperties(properties);
+			$('.property' + propertyId +"-extradetails").show();
 		}
 		function bindAdditionalDetails(e) {
 			$('#headeraddndetails').html(e.header);
 			$('#leftaddndetails').html('<li>' + e.left.join('</li><li>') + '</li>');
 			$('#rightaddndetails').html('<li>' + e.right.join('</li><li>') + '</li>');
 		}
-		function gettablehtml(e) {
+		function gettablehtml(e, onrent) {
 			var trs = [['<tr><td style="font-weight:bold;">BR</td>'],
 			['<tr><td style="font-weight:bold;">Built-up Area <span style="font-size: 10px;">(Sq. ft)</span></td>'],
 			['<tr><td style="font-weight:bold;">Plot Area <span style="font-size: 10px;">(Sq. ft)</span></td>'],
 			['<tr><td style="font-weight:bold;">Ground <span style="font-size: 10px;">(Sq. ft)</span></td>'],
 			['<tr><td style="font-weight:bold;">Upper Floor <span style="font-size: 10px;">(Sq. ft)</span></td>'],
 			['<tr><td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Millions)</span></td>']];
+			if(onrent)
+				trs.push(['<tr><td style="font-weight:bold;">RENT/<span style="font-size: 10px;">Month</span></td>']);
 			for (var i = 0; i <= e.length - 1; i++) {
 				var tr = '';
 				if (i == e.length - 1)
@@ -498,6 +540,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				trs[3].push('<td>' + e[i].groundarea + '</td>' + tr);
 				trs[4].push('<td>' + e[i].upperarea + '</td>' + tr);
 				trs[5].push('<td>' + e[i].ksh + '</td>' + tr);
+				if(onrent)
+					trs[6].push('<td>' + e[i].rent + '</td>' + tr);
 			}
 			return ["<tbody>", "</tbody>"].join($.each(trs, function (index, value) {
 				return value
@@ -604,7 +648,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
 			for (var i = 0; i < hashes.length; i++) {
 				hash = hashes[i].split('=');
-				vars.push(hash[0]);
 				vars[hash[0]] = hash[1];
 			}
 			return vars;

@@ -47,7 +47,6 @@
       "id": 1,
       "type": "residential",
       "launchdate": "March 2018",
-      "area": "502",
       "areain": "Sq. ft",
       "kshin": "Millions",
       "countryid": 1,
@@ -55,6 +54,7 @@
       "name": "BAMBURI COCONUT VILLAS, BAMBURI MOMBASA",
       "desc": "<p>Welcome to Bamburi Coconut Villas where peace and happiness is the by-product of this one of a kind project. It is in harmony with your dreams and enable you to build a relationship with nature as well as your neighbors. The architecture of this project creatively blends contemporary style with the combination of luxurious lifestyle amenities making this an ideal dwelling for its residents. The project offers spacious and well-designed 3BR and 4BR townhouse, to provide you with outmost comfort and quality living standards. Surrounded by regal architecture, absolute privacy, a green landscape and the finest of modern facilities which will give you a royal feel. It is well planned and is built with all modern construction methods. The project offers 11 units of 3BR and 9 units of 4BR.</p>",
       "category": "Apartment",
+	  "onrent":false,
       "propertydetails": [
         {
           "br": "3(53 * 31)",
@@ -87,14 +87,14 @@
       "id": 2,
       "type": "residential",
       "launchdate": "2014",
-      "area": "502",
       "areain": "Sq. ft",
       "kshin": "Millions",
       "countryid": 1,
       "cityid": 1,
-      "name": "ZAWADI APARTMENTS 3",
-      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "name": "ZAWADI APARTMENTS",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail - Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
       "category": "Apartment",
+	  "onrent":false,
       "propertydetails": [
         {
           "br": "2(53 * 31)",
@@ -115,9 +115,9 @@
       ],
 	  "additionaldetails":
 	  {
-		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
-		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
-		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+		"header":"To ensure a wholesome community environment within Zawadi Apartments the developers have prudently incorporated the following key features:",
+		"left":["Kindergarten School","Community Centre","Health Club","Swimming Pool","Adequate Playing Ground","24hr Security with secured wall parameter","Generator Backup"],
+		"right":[]
 	  },
 	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
 	  "rating":3,
@@ -126,38 +126,40 @@
 	{
       "id": 3,
       "type": "residential",
-      "launchdate": "2014",
-      "area": "502",
+      "launchdate": "2017",
       "areain": "Sq. ft",
       "kshin": "Millions",
       "countryid": 1,
       "cityid": 1,
-      "name": "ZAWADI APARTMENTS 2",
-      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "name": "HYDRO (H2O) LUXURIOUS APARTMENTS - 1st AVENUE NYALI, Mombasa",
+      "desc": "<p>The Hydro H20 luxurious apartments, has successfully achieved to push the envelope of convectional real estate product available in the market to a different level in terms of design quality and not just product  based  amenities. Every apartment in our residential colony portrays luxury style and comfort. 32 plush apartments lined with individual backyard speak of an elegant blend of contemporary culture and nature to bring you everything you need for your home. Built keeping in mind the end user, these apartments are designed with approvals and quality materials. Hydro - H2O Luxurious Apartments located in 1st avenue Nyali, Mombasa. This is the most prestigious and pleasurable place to live. And for those who relish great style and sophistication, you'll feel more at home here than ever before. It is a stunningly sophisticated community that will take you to the next level of luxury. Everything at the HYDRO (H2O) LUXURIOUS APARTMENTS is built to exceed expectations. HYDRO (H2O) LUXURIOUS APARTMENTS is your statement to the world that you have arrived in great style. </p>",
       "category": "Apartment",
+	  "onrent":true,
       "propertydetails": [
         {
-          "br": "2(53 * 31)",
-          "builtuparea": 1665,
-          "plotarea": 1633,
-          "groundarea": 662,
-          "upperarea": 1003,
-          "ksh": 10.5
+          "br": "3",
+          "builtuparea": "NA",
+          "plotarea": "NA",
+          "groundarea": "NA",
+          "upperarea": "NA",
+          "ksh": 18,
+		  "rent":90000
         },
         {
-          "br": "3(53 * 31)",
-          "builtuparea": 2447,
-          "plotarea": 2031,
-          "groundarea": 1231,
-          "upperarea": 1261,
-          "ksh": 12.5
+          "br": "4-Penthouse",
+          "builtuparea": "NA",
+          "plotarea": "NA",
+          "groundarea": "NA",
+          "upperarea": "NA",
+          "ksh": 25,
+		  "rent":130000
         }
       ],
 	  "additionaldetails":
 	  {
-		"header":"The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:",
-		"left":["Copy of property1","Satellite TV & Phone points","AC points & Piping","UPVC windows","Wooden main door","Vitrified tiled floor","High-lighted wall in living room","Built-in cabinets with granite counter tops","Designer Floor and wall tiles in Kitchen and Bathroom","Universal sanitary ware, fitting and accessories"],
-		"right":["Ample Parking","Backup generators for vantage areas","Swimming Pool (common for residents)","Borehole Water","Perimeter Wall","Security Fencing","Developed Garden","Cabro road within the project premises"]
+		"header":"Project has modern amenities, which make the place to live in and that's what our most customers have purchases their home (not house) in HYDRO luxurious Apartmets.",
+		"left":["Architecturally well developed"," Floor plans in term of room and sizes, furniture fitments","Well thought RCC design creating ambient interior spaces","Well-lit ventilated bathrooms spaces","5 minute vicinity from sea","5 minute drive to town centre","Cabro paving blocks for internal roads","Concealed plumbing with mixers"," Superior quality sanitary fixtures and water storage PVC tank","Vitrified high standard tiles","Imported designer ceramic tiles and water heater in Bathrooms/ Toilet","Bore hole with underground water tank","Concealed electric wiring with copper conductors and latest electrical accessories","T V points in family room and all bedrooms"],
+		"right":["Generator back up in common areas","Granite platform in kitchen with stainless steel sink","Hardwood door frame with superior quality and hardware","Full perimeter security system with electrical fences","Wardrobe and cabinets and all to be in laminated mdf boards","To provide intercom system connected to guards"," Standard fitted gym and changing rooms","Sufficient landscaping","UPVC Windows ,design, mosquito netting","Modular switches,3 phase supply in each apartment with distribution board, with latest lifesaving electrical safety features like MCB and ELLB","Earthquake resistant","Anti-termite treatment","Enhanced structural system"]
 	  },
 	  "mapembedurl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857",
 	  "rating":2,
@@ -173,7 +175,7 @@
       "countryid": 1,
       "cityid": 1,
       "name": "ZAWADI APARTMENTS 1",
-      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail – Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
+      "desc": "<p>A development, conveniently located on one of the most beautiful, scenic and tranquil locations on the Kenyan North Coast of Mombasa adjacent to Bamburi Nature Trail-Haller Park</p><p>Set on 5 acres, the Zawadi Apartments development is only 1.5 miles away from the stunning, unspoiled white sandy beaches of Kenya's second largest city, Mombasa.  Zawadi Apartments have been developed through the expertise of leading consultants to provide Kenyans with the high standards of living, comfort, style and luxury that they deserve.</p><p>Ample of secure parking space is available to all residents and their visitors. The parking area will be cabro surfaced with green garden spaces built within. The water supply to all units will be made available through a borehole supply.The project intends to recycle most of the water, as well as creating an efficient rainwater harvesting mechanism. </p>",
       "category": "Apartment",
       "propertydetails": [
         {
