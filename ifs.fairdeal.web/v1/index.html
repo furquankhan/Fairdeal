@@ -28,6 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="../js/responsiveslides.min.js"></script>
     <script defer src="../js/jquery.flexslider.js"></script>
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
     <script>
         $(function () {
             $(".imageslider").responsiveSlides({
@@ -37,10 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 pager: true,
             });
 
-            $('#mostpopular').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails"
-            });
+
         });
     </script>
 </head>
@@ -269,18 +267,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="content">
         <div class="content-grid">
             <div class="container">
-                <div id="mostpopular"></div>
+                <div class="propslider">
+                    <ul id="mostpopular">
+                    </ul> 
+                </div>
                 <div id="mostpopularstruc" style="display: none;">
-                    <div class="col-md-4 box_2">
-                        <a href="property.html?pid={PROPERTYID}" class="mask">
-                            <img class="img-responsive zoom-img" src="{IMAGESRC}" alt="">
-                            <span class="four">{PROPERTYAMOUNT}</span>
-                        </a>
-                        <div class="most-1">
-                            <h5><a href="property.html?pid={PROPERTYID}">{PROPERTYNAME}</a></h5>
-                            <p></p>
-                        </div>
-                    </div>
+                    <li>
+                            <div style="margin:0 15px;">
+                                <a href="property.html?pid={PROPERTYID}" class="mask">
+                                    <img class="img-responsive zoom-img" src="{IMAGESRC}" alt="">
+                                    <span class="four">{PROPERTYAMOUNT}</span>
+                                </a>
+                                <div class="most-1">
+                                    <h5><a href="property.html?pid={PROPERTYID}">{PROPERTYNAME}</a></h5>
+                                    <p></p>
+                                </div>  
+                            </div>
+                        </li>                   
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -633,7 +636,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        var _html = '';
 	        $.each(ratingSortedProps, function (index, value) {
 	            var sortedInnerProp = sortProperties(value.propertydetails, 'ksh', true);
-	            if (index < 3)
+	            if (index < 5)
 	                _html += $("#mostpopularstruc").html()
 						.replace("{IMAGESRC}", value.propertimage)
 						.replace("{PROPERTYNAME}", value.name)
@@ -643,6 +646,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	                return false;
 	        });
 	        $("#mostpopular").html(_html);
+                        $('#mostpopular').flexisel({
+                                visibleItems: 3,
+                                animationSpeed: 1000,
+                                autoPlay: true,
+                                autoPlaySpeed: 3000,
+                                pauseOnHover: true,
+                                enableResponsiveBreakpoints: true,
+                                responsiveBreakpoints: {
+                                    portrait: {
+                                        changePoint: 480,
+                                        visibleItems: 1
+                                    },
+                                    landscape: {
+                                        changePoint: 640,
+                                        visibleItems: 2
+                                    },
+                                    tablet: {
+                                        changePoint: 768,
+                                        visibleItems: 3
+                                    }
+                                }
+                            });
 	    }
 	    function sortProperties(properties, prop, asc) {
 	        properties = properties.sort(function (a, b) {
