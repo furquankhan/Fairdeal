@@ -227,11 +227,12 @@ i.deal{
 }
 .right-icons li{
 	display: inline-block;
+	padding-right:5px;
 }
 .right-icons li span,.right-icons li a{
 	display: block;
-	font-size: 1em;
-	color:#83367F;
+	font-size: 17px;
+	color:#7e3a95;
 	text-decoration: none;
 	margin: 0 0.3em;
 }

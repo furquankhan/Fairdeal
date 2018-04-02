@@ -49,107 +49,111 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 
 	<div class="header">
-		<div class="container">
-			<!--logo-->
-			<div class="logo">
-				<h1><a href="index.html">Fair Deal</a></h1>
-			</div>
-			<!--//logo-->
-			<div class="top-nav">
-				<ul class="right-icons">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="property.html?pid=1">Properties</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="career.html">Careers</a></li>
-					<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
+        <div class="container">
+            <!--logo-->
+            <div class="logo">
+                <h1><a href="index.html" alt="Fair Deal">
+                    <img src="images/logo.png" width="150px;" height="75px;" /></a></h1>
+            </div>
+            <!--//logo-->
+            <div class="top-nav" style="margin-top: 25px;">
+                <ul class="right-icons">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Properties</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"></i></a></li>
 
-				</ul>
-				<!--<div class="nav-icon">
-					<div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
-							<a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
-						</div>
+                </ul>
+                <!--<div class="nav-icon">
+				<div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
+						<a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
+					</div>	
+				
+				<a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+			
+			</div>--->
+                <div class="clearfix"></div>
+                <!---pop-up-box---->
 
-					<a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+                <link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+                <script src="../js/jquery.magnific-popup.js" type="text/javascript"></script>
+                <!---//pop-up-box---->
+                <div id="small-dialog" class="mfp-hide">
+                    <!----- tabs-box ---->
+                    <div class="sap_tabs">
+                        <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                            <ul class="resp-tabs-list">
+                                <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>All Homes</span></li>
+                                <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>For Sale</span></li>
+                                <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>For Rent</span></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="resp-tabs-container">
+                                <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>All Homes</h2>
+                                <div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display: block">
+                                    <div class="facts">
+                                        <div class="login">
+                                            <input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
+                                            <input type="submit" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>For Sale</h2>
+                                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                                    <div class="facts">
+                                        <div class="login">
+                                            <input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
+                                            <input type="submit" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>For Rent</h2>
+                                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                                    <div class="facts">
+                                        <div class="login">
+                                            <input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
+                                            <input type="submit" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="../js/easyResponsiveTabs.js" type="text/javascript"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#horizontalTab').easyResponsiveTabs({
+                                    type: 'default', //Types: default, vertical, accordion           
+                                    width: 'auto', //auto or any width like 600px
+                                    fit: true   // 100% fit in a container
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.popup-with-zoom-anim').magnificPopup({
+                            type: 'inline',
+                            fixedContentPos: false,
+                            fixedBgPos: true,
+                            overflowY: 'auto',
+                            closeBtnInside: true,
+                            preloader: false,
+                            midClick: true,
+                            removalDelay: 300,
+                            mainClass: 'my-mfp-zoom-in'
+                        });
 
-				</div>--->
-				<div class="clearfix"> </div>
-				<!---pop-up-box---->
-
-				<link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-				<script src="../js/jquery.magnific-popup.js" type="text/javascript"></script>
-				<!---//pop-up-box---->
-				<div id="small-dialog" class="mfp-hide">
-					<!----- tabs-box ---->
-					<div class="sap_tabs">
-						<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-							<ul class="resp-tabs-list">
-								<li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>All Homes</span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>For Sale</span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>For Rent</span></li>
-								<div class="clearfix"></div>
-							</ul>
-							<div class="resp-tabs-container">
-								<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>All Homes</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
-									<div class="facts">
-										<div class="login">
-											<input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
-											<input type="submit" value="">
-										</div>
-									</div>
-								</div>
-								<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>For Sale</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-									<div class="facts">
-										<div class="login">
-											<input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
-											<input type="submit" value="">
-										</div>
-									</div>
-								</div>
-								<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>For Rent</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-									<div class="facts">
-										<div class="login">
-											<input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
-											<input type="submit" value="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<script src="../js/easyResponsiveTabs.js" type="text/javascript"></script>
-						<script type="text/javascript">
-							$(document).ready(function () {
-								$('#horizontalTab').easyResponsiveTabs({
-									type: 'default', //Types: default, vertical, accordion
-									width: 'auto', //auto or any width like 600px
-									fit: true   // 100% fit in a container
-								});
-							});
-						</script>
-					</div>
-				</div>
-				<script>
-					$(document).ready(function () {
-						$('.popup-with-zoom-anim').magnificPopup({
-							type: 'inline',
-							fixedContentPos: false,
-							fixedBgPos: true,
-							overflowY: 'auto',
-							closeBtnInside: true,
-							preloader: false,
-							midClick: true,
-							removalDelay: 300,
-							mainClass: 'my-mfp-zoom-in'
-						});
-
-					});
-				</script>
+                    });
+                </script>
 
 
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 	<!--//-->
 	<div class=" banner-buying">
 		<div class=" container">
@@ -210,23 +214,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" buying-top">
 						<div class="flexslider">
 								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
-									<li data-thumb="images/property1/4.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property1/1H.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/1H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property1/2H.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property1/2H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/2.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/2.jpg" draggable="false">
+									<li data-thumb="images/property1/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/3H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/3.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/3.jpg" draggable="false">
+									<li data-thumb="images/property1/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/4H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/4.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property1/5H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/5H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property1/6H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property1/6H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/7H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property1/7H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/8H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property1/8H.jpg" draggable="false">
 									</li>
 								</ul>
 						</div>
@@ -240,10 +250,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Featured Communities</h4>
 						<div class="scrollbar">
 							<div id="featuredproperties" class="force-overflow">
-								<div class="single-box-img">
+								<div class="single-box-img" style="display:none;">
 									<div class="box-img">
 										<a href="property.html?pid=1">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -255,34 +265,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=5">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=5">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=5" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=7">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=7">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=7" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
 										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -294,13 +278,111 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=6">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=6">ZAWADI APARTMENTS 3</a></p>
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
 										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -485,23 +567,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" buying-top">
 						<div class="flexslider">
 								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
-									<li data-thumb="images/property2/4.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property2/4.jpg" draggable="false">
+									<li data-thumb="images/property2/1h.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property2/1h.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property2/1.jpg" style="width: 823px; float: left; display: block;" class="">
-										<img class="gallery-images" "="" src="images/property2/1.jpg" draggable="false">
+									<li data-thumb="images/property2/2h.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property2/2h.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property2/2.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property2/2.jpg" draggable="false">
+									<li data-thumb="images/property2/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property2/3H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property2/3.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property2/3.jpg" draggable="false">
+									<li data-thumb="images/property2/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property2/4H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property2/4.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property2/4.jpg" draggable="false">
+									<li data-thumb="images/property2/5H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property2/5H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property2/1.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
-										<img class="gallery-images" "="" src="images/property2/1.jpg" draggable="false">
+									<li data-thumb="images/property2/6H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property2/6H.jpg" draggable="false">
 									</li>
 								</ul>
 						</div>
@@ -515,14 +597,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Featured Communities</h4>
 						<div class="scrollbar">
 							<div id="featuredproperties" class="force-overflow">
-								<div class="single-box-img">
+								<div class="single-box-img" style="display:none;">
 									<div class="box-img">
-										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=2">Zawadi Apartments</a></p>
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
 										<a href="property.html?pid=1" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
@@ -530,34 +612,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=5">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=5">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=5" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=7">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=7">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=7" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
 										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -569,19 +625,119 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=6">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=6">ZAWADI APARTMENTS 3</a></p>
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
 										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
 							</div>
 					   </div>
+
 					</div>
+
 				</div>
 
 			</div>
@@ -772,39 +928,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div id="featuredproperties" class="force-overflow">
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=3">
-											<img class="img-responsive" src="images/property3/1.jpg" alt="">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS</a></p>
-										<a href="property.html?pid=3" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=5">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=5">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=5" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=7">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=7">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=7" class="in-box">More Info</a>
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -812,7 +942,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="single-box-img">
 									<div class="box-img">
 										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -822,15 +952,113 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"></div>
 								</div>
 							
-								<div class="single-box-img">
+								<div class="single-box-img" style="display:none;">
 									<div class="box-img">
-										<a href="property.html?pid=6">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=6">ZAWADI APARTMENTS 3</a></p>
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
 										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1014,23 +1242,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" buying-top">
 						<div class="flexslider">
 								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
-									<li data-thumb="images/property1/4.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property4/1H.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property4/1H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property4/2H.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property4/2H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/2.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/2.jpg" draggable="false">
+									<li data-thumb="images/property4/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property4/3H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/3.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/3.jpg" draggable="false">
+									<li data-thumb="images/property4/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property4/4H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/4.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property4/5H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property4/5H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property4/6H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property4/1H.jpg" draggable="false">
 									</li>
 								</ul>
 						</div>
@@ -1046,39 +1274,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div id="featuredproperties" class="force-overflow">
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=3">
-											<img class="img-responsive" src="images/property3/1.jpg" alt="">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS</a></p>
-										<a href="property.html?pid=3" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=5">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=5">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=5" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=7">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=7">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=7" class="in-box">More Info</a>
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1086,7 +1288,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="single-box-img">
 									<div class="box-img">
 										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -1098,13 +1300,111 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=6">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=6">ZAWADI APARTMENTS 3</a></p>
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
 										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1271,23 +1571,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" buying-top">
 						<div class="flexslider">
 								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
-									<li data-thumb="images/property1/4.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property5/1H.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property5/1H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property5/2H.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property5/2H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/2.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/2.jpg" draggable="false">
+									<li data-thumb="images/property5/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property5/3H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/3.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/3.jpg" draggable="false">
+									<li data-thumb="images/property5/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property5/4H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/4.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property5/5H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property5/5H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property5/6H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property5/6H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property5/7H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property5/7H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property5/8H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property5/8H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property5/9H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property5/9H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property5/10H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property5/10H.jpg" draggable="false">
 									</li>
 								</ul>
 						</div>
@@ -1301,41 +1613,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Featured Communities</h4>
 						<div class="scrollbar">
 							<div id="featuredproperties" class="force-overflow">
-								<div class="single-box-img">
+								<div class="single-box-img" >
 									<div class="box-img">
-										<a href="property.html?pid=3">
-											<img class="img-responsive" src="images/property3/1.jpg" alt="">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS</a></p>
-										<a href="property.html?pid=3" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=5">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=5">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=5" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=7">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=7">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=7" class="in-box">More Info</a>
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1343,7 +1629,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="single-box-img">
 									<div class="box-img">
 										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -1355,13 +1641,111 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=6">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=6">ZAWADI APARTMENTS 3</a></p>
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
 										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1532,23 +1916,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class=" buying-top">
 						<div class="flexslider">
 								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
-									<li data-thumb="images/property1/4.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property6/1H.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property6/1H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property6/2H.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property6/2H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/2.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/2.jpg" draggable="false">
+									<li data-thumb="images/property6/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property6/3H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/3.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/3.jpg" draggable="false">
+									<li data-thumb="images/property6/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property6/4H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/4.jpg" class="" style="width: 823px; float: left; display: block;">
-										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									<li data-thumb="images/property6/5H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property6/5H.jpg" draggable="false">
 									</li>
-									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
-										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									<li data-thumb="images/property6/6H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property6/6H.jpg" draggable="false">
 									</li>
 								</ul>
 						</div>
@@ -1562,41 +1946,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Featured Communities</h4>
 						<div class="scrollbar">
 							<div id="featuredproperties" class="force-overflow">
-								<div class="single-box-img">
+								<div class="single-box-img" >
 									<div class="box-img">
-										<a href="property.html?pid=3">
-											<img class="img-responsive" src="images/property3/1.jpg" alt="">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS</a></p>
-										<a href="property.html?pid=3" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=5">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=5">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=5" class="in-box">More Info</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							
-								<div class="single-box-img">
-									<div class="box-img">
-										<a href="property.html?pid=7">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
-										</a>
-									</div>
-									<div class="box-text">
-										<p><a href="property.html?pid=7">ZAWADI APARTMENTS 5</a></p>
-										<a href="property.html?pid=7" class="in-box">More Info</a>
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1604,7 +1962,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="single-box-img">
 									<div class="box-img">
 										<a href="property.html?pid=2">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
@@ -1616,13 +1974,111 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 								<div class="single-box-img">
 									<div class="box-img">
-										<a href="property.html?pid=6">
-											<img class="img-responsive" src="images/property2/1.jpg" alt="">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
 										</a>
 									</div>
 									<div class="box-text">
-										<p><a href="property.html?pid=6">ZAWADI APARTMENTS 3</a></p>
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
 										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -1779,7 +2235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="map-buy-single">
 					<h4>Neighborhood Info</h4>
 					<div class="map-buy-single1">
-						<iframe id="propertymap" src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe id="propertymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63681.87518042074!2d39.68168407272723!3d-3.996318381851656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18400dc9042093c7%3A0x9576d364a78e35d1!2sBamburi%2C+Mombasa%2C+Kenya!5e0!3m2!1sen!2sin!4v1519672972857" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 					</div>
 				</div>
@@ -1799,13 +2255,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div id="prop7" class="buy-single-single" style="display:none">
 			<div class="col-md-12">
 				<div class="middle-side">
-					<h4 id="propertyname">BAMBURI COCONUT VILLAS, Bamburi MOMBASA</h4>
+					<h4 id="propertyname">KISIMANI HEIGHTS, behind Mary Joy Primary School, Mombasa Malindi Road,Kisauni, Mombasa </h4>
 				</div>
 				<div class="col-md-9 single-box">
 
 					<div class=" buying-top">
 						<div class="flexslider">
-							<ul class="slides" id="propertyimages"></ul>
+								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
+									<li data-thumb="images/property7/1H.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property7/1H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/2H.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property7/2H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property7/3H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property7/4H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/5H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property7/5H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/6H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property7/6H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/7H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property7/7H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property7/8H.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property7/8H.jpg" draggable="false">
+									</li>
+								</ul>
 						</div>
 						<!-- FlexSlider -->
 						<script defer src="../js/jquery.flexslider.js"></script>
@@ -1816,8 +2297,145 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="single-box-right right-immediate">
 						<h4>Featured Communities</h4>
 						<div class="scrollbar">
-							<div id="featuredproperties" class="force-overflow"></div>
-						</div>
+							<div id="featuredproperties" class="force-overflow">
+								<div class="single-box-img" >
+									<div class="box-img">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=2">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=2">ZAWADI APARTMENTS</a></p>
+										<a href="property.html?pid=2" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
+										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					   </div>
 
 					</div>
 
@@ -1838,39 +2456,78 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						-->
 						<table class="table" id="propertydetails">
 							<tbody>
-								<tr>
-									<td style="font-weight:bold;">BR</td>
-									<td id="propertybr">3(53 * 31)</td>
-									<td>4(55 * 37)</td>
-								</tr>
+								<h5 style="font-weight:bold;font-size: 18px;">Studio Apt</h5>
 								<tr>
 									<td style="font-weight:bold;">Built-up Area <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>1665</td>
-									<td>2447</td>
+									<td id="propertybr">430</td>
+									<td>450</td>
+									<td>500</td>
 								</tr>
 								<tr>
-									<td style="font-weight:bold;">Plot Area <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>1633</td>
-									<td>2031</td>
+									<td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Million)</span></td>
+									<td id="propertybr">2.2</td>
+									<td>2.4</td>
+									<td>2.7</td>
+								</tr>								
+							</tbody>
+						</table>
+						<table class="table">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">1 BR (2nd Floor)</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td>660 </td>
+									<td>760</td>
+									<td>800 </td>
 								</tr>
 								<tr>
-									<td style="font-weight:bold;">Ground <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>662</td>
-									<td>1231</td>
-								</tr>
-								<tr>
-									<td style="font-weight:bold;">Upper Floor <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>1033</td>
-									<td>1261</td>
-								</tr>
-								<tr>
-									<td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Millions)</span></td>
-									<td>10.5</td>
-									<td>12.5</td>
+									<td style="font-weight:bold;">Rent<span style="font-size: 10px;">(Per month)</span></td>
+									<td>10,000 -  15,000 </td>
+									<td>10,000 -  15,000</td>
+									<td>10,000 -  15,000 </td>
 								</tr>
 							</tbody>
 						</table>
-
+						<table class="table">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">2 BR (3rd  to 9th )</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">KSH<span style="font-size: 10px;">(Million)</span></td>
+									<td>4.9</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Rent<span style="font-size: 10px;">(Per month)</span></td>
+									<td>18,000 - 23,000</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">3 BR (3rd  to 9th )</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td>1200 </td>
+									<td>1250</td>
+									<td>1340 </td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">KSH<span style="font-size: 10px;">(Million)</span></td>
+									<td>5.5 </td>
+									<td>5.6</td>
+									<td>5.8</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Rent<span style="font-size: 10px;">(Per month)</span></td>
+									<td>25,000 - 28,000</td>
+									<td>25,000 - 28,000</td>
+									<td>25,000 - 28,000</td>
+								</tr>
+							</tbody>
+						</table>
 
 
 
@@ -1879,19 +2536,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Description</h4>
 						<div id="propertydescription">
 							<p>
-								Welcome to Bamburi Coconut Villas where peace and happiness is the by-product of this one of a kind project. It is in harmony with your dreams and enable you to build a relationship with nature as well as your neighbors.
-
-
-
-								The architecture of this project creatively blends contemporary style with the combination of luxurious lifestyle amenities making this an ideal dwelling for its residents.
-
-
-
-								The project offers spacious and well-designed 3BR and 4BR townhouse, to provide you with outmost comfort and quality living standards. Surrounded by regal architecture, absolute privacy, a green landscape and the finest of modern facilities which will give you a royal feel.
-
-
-
-								It is well planned and is built with all modern construction methods. The project offers 11 units of 3BR and 9 units of 4BR.
+								Kisimani Heights apartments located at KISIMANI, behind Mary Joy Primary School, Mombasa Malindi Road in Bombolulu area of  Mombasa. It is a residential tower of 9 floors having following configurations of bedrooms.  They have been designed carefully taking into consideration modern living aspirations and creating the homely feeling with spacious unit sizes & conveniently designed floor-plans.
 							</p>
 						</div>
 
@@ -1938,35 +2583,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="clearfix"></div><br />
 					<div class="col-sm-12">
-						<h4 style="font-weight:bold;" id="headeraddndetails">The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:</h4>
+						<h4 style="font-weight:bold;" id="headeraddndetails">The amenities are excellent in this project and is ideal for investment. They are-</h4>
 						<br />
 						<div class="col-sm-6 list">
 							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
-								<li><i></i>Built-in wardrobes</li>
-								<li><i></i>Satellite TV & Phone points</li>
-								<li><i></i>AC points & Piping</li>
-								<li><i></i>UPVC windows</li>
-								<li><i></i>Wooden main door</li>
-								<li><i></i>Vitrified tiled floor</li>
-								<li><i></i>High-lighted wall in living room</li>
-								<li><i></i>Built-in cabinets with granite counter tops</li>
-								<li><i></i> Designer Floor and wall tiles in Kitchen and Bathroom</li>
-								<li><i></i>Universal sanitary ware, fitting and accessories</li>
+								<li><i></i>Located Strategically on peaceful & green environment.</li>
+								<li><i></i>The Project is behind Mary Joy Primary school. </li>
+								<li><i></i>2 Way access to the Project via – Mombasa Malindi Road and Mary joy School Road.</li>
+								<li><i></i>Church and Mosque at a walking distance away.</li>
+								<li><i></i>Public Beaches is at a short driving distance of 15 Minutes.</li>
+								<li><i></i>Promising commercial area and residential developments happening around.</li>
+								<li><i></i>Easy access to Public Transport and connection to prominent shopping destination.</li>
+								<li><i></i>Great Potential for Appreciation of property value.</li>
+								<li><i></i>Near to City Mall, Nakumatt, Naivas, Cinemax.</li>
+								<li><i></i>Free from day to day traffic and crowd.</li>
+								<li><i></i>Quality construction by experienced contracting firm.</li>
+								<li><i></i>Project by team of experts of their respective fields on board.</li>
 							</ul>
 						</div>
+						<div class="clearfix"></div><br>
+						<h4 style="font-weight:bold;" id="headeraddndetails">AMENITIES</h4>
+						<br />
 						<div class="col-sm-6 list">
-							<ul class="" style="list-style-type:disc;" id="rightaddndetails">
-								<li><i></i>Ample Parking</li>
-								<li><i></i>Backup generators for vantage areas</li>
-								<li><i></i>Swimming Pool (common for residents)</li>
+							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
 								<li><i></i>Borehole Water</li>
-								<li><i></i>Perimeter Wall</li>
+								<li><i></i>Car Parking for 2 & 3 BR</li>
+								<li><i></i>Lift</li>
+								<li><i></i>Staircase</li>
+								<li><i></i>Wardrobes</li>
+								<li><i></i>UPVC windows</li>
 								<li><i></i>Security Fencing</li>
-								<li><i></i>Developed Garden</li>
-								<li><i></i>Cabro road within the project premises</li>
+								<li><i></i>Perimeter Wall</li>
+								<li><i></i>Fairdeal Shopping Centre in Vicinity</li>
+								<li><i></i>Playing ground nearby to project location</li>
+								<li><i></i>Architecturally well designed plan for ample light and air</li>
+								<li><i></i>Roof top Swimming Pool</li>
+								<li><i></i>Utility area</li>
+								<li><i></i>24 hours Modern Security services</li>
 							</ul>
-						</div>
-						<div class="clearfix"></div>
+						</div><div class="clearfix"></div><br>
 						<div class="">
 							<a href="contact.html" class="hvr-sweep-to-right more">Contact Builder</a>
 						</div>
@@ -1997,7 +2652,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div id="prop8" class="buy-single-single" style="display:none">
 			<div class="col-md-12">
 				<div class="middle-side">
-					<h4 id="propertyname">BAMBURI COCONUT VILLAS, Bamburi MOMBASA</h4>
+					<h4 id="propertyname">Meshaal Heights, Dr. Rashid Ali road, Kizingo, Mombasa</h4>
 				</div>
 				<div class="col-md-9 single-box">
 
@@ -2014,8 +2669,145 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="single-box-right right-immediate">
 						<h4>Featured Communities</h4>
 						<div class="scrollbar">
-							<div id="featuredproperties" class="force-overflow"></div>
-						</div>
+							<div id="featuredproperties" class="force-overflow">
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=2">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=2">ZAWADI APARTMENTS</a></p>
+										<a href="property.html?pid=2" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
+										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					   </div>
 
 					</div>
 
@@ -2036,36 +2828,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						-->
 						<table class="table" id="propertydetails">
 							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">Sale</h5>
 								<tr>
-									<td style="font-weight:bold;">BR</td>
-									<td id="propertybr">3(53 * 31)</td>
-									<td>4(55 * 37)</td>
+									<td style="font-weight:bold;">Built-up-area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td id="propertybr">5000</td>
+									<td id="propertybr">2500</td>
 								</tr>
 								<tr>
-									<td style="font-weight:bold;">Built-up Area <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>1665</td>
-									<td>2447</td>
+									<td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Million)</span></td>
+									<td id="propertybr">60</td>
+									<td id="propertybr">30</td>
 								</tr>
 								<tr>
-									<td style="font-weight:bold;">Plot Area <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>1633</td>
-									<td>2031</td>
+									<td style="font-weight:bold;">BR<span style="font-size: 10px;"></span></td>
+									<td id="propertybr">Duplex</td>
+									<td id="propertybr">3</td>
+								</tr>								
+							</tbody>
+						</table>
+
+						<table class="table" id="propertydetails">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">Rent</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up-area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td id="propertybr">5000</td>
+									<td id="propertybr">2500</td>
 								</tr>
 								<tr>
-									<td style="font-weight:bold;">Ground <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>662</td>
-									<td>1231</td>
+									<td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Per month)</span></td>
+									<td id="propertybr">200,000 </td>
+									<td id="propertybr">100,000 </td>
 								</tr>
 								<tr>
-									<td style="font-weight:bold;">Upper Floor <span style="font-size: 10px;">(Sq. ft)</span></td>
-									<td>1033</td>
-									<td>1261</td>
-								</tr>
-								<tr>
-									<td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Millions)</span></td>
-									<td>10.5</td>
-									<td>12.5</td>
-								</tr>
+									<td style="font-weight:bold;">BR<span style="font-size: 10px;"></span></td>
+									<td id="propertybr">Duplex</td>
+									<td id="propertybr">3</td>
+								</tr>								
 							</tbody>
 						</table>
 
@@ -2077,19 +2876,302 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4>Description</h4>
 						<div id="propertydescription">
 							<p>
-								Welcome to Bamburi Coconut Villas where peace and happiness is the by-product of this one of a kind project. It is in harmony with your dreams and enable you to build a relationship with nature as well as your neighbors.
+								This season, open up to luxurious living with spacious  3 BHK premium residences with SR and stylish kitchen.
+
+								Conveniently located in Kizingo, Mombasa, these residences get you even closer to the inner peace you need and the excitement you want, all right at your doorstep.
+
+								A Centre of attraction, ‘Meshaal Heights’ is a 9-storey residential tower in the heart of Mombasa. An ideal location for all those who enjoy being in the midst of the action.
+
+								Here it has 3 bedroom apartments with attached servant quarters; penthouse and duplex. The luxurious homes have been designed to optimize space utilization. The layout ensures privacy, cross ventilation and abundant light.
+							</p>
+						</div>
 
 
 
-								The architecture of this project creatively blends contemporary style with the combination of luxurious lifestyle amenities making this an ideal dwelling for its residents.
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12 property3-extradetails" style="display:none;">
+						<h4 style="font-weight:bold;">The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<h5>Additional Features</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>One large size Speed elevator.</li>
+								<li><i></i>1 parking spaces for each apartment.</li>
+								<li><i></i>Steam, sauna and Jacuzzi.</li>
+								<li><i></i>Back-up generator for common areas.</li>
+								<li><i></i>spacious kitchen</li>
+								<li><i></i>Borehole</li>
+								<li><i></i>24*7 Security</li>
+								<li><i></i>Fitted wardrobes in bedrooms.</li>
+								<li><i></i>DSQ</li>
+								<li><i></i>State of the art swimming pool and Gym on the terrace.</li>
+								<li><i></i>Book your home at Meshaal Height, Kizingo in Mombasa.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12">
+						<h4 style="font-weight:bold;" id="headeraddndetails">Additional Features:</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
+								<li><i></i>One large size Speed elevator.</li>
+								<li><i></i>1 parking spaces for each apartment.</li>
+								<li><i></i>Steam, sauna and Jacuzzi.</li>
+								<li><i></i>Back-up generator for common areas.</li>
+								<li><i></i>spacious kitchen</li>
+								<li><i></i>Borehole</li>
+								<li><i></i>24*7 Security</li>
+								<li><i></i>Fitted wardrobes in bedrooms.</li>
+								<li><i></i>DSQ</li>
+								<li><i></i>State of the art swimming pool and Gym on the terrace.</li>
+								<li><i></i>Book your home at Meshaal Height, Kizingo in Mombasa.</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+						<div class="">
+							<a href="contact.html" class="hvr-sweep-to-right more">Contact Builder</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="clearfix"></div><br />
+				<div class="map-buy-single">
+					<h4>Neighborhood Info</h4>
+					<div class="map-buy-single1">
+						<iframe id="propertymap" src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+					</div>
+				</div>
+				<!--<div class="video-pre">
+						<h4>Video Presentation</h4>
+						<iframe src="https://player.vimeo.com/video/63931426"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+					</div>-->
+
+			</div>
 
 
 
-								The project offers spacious and well-designed 3BR and 4BR townhouse, to provide you with outmost comfort and quality living standards. Surrounded by regal architecture, absolute privacy, a green landscape and the finest of modern facilities which will give you a royal feel.
+		</div>
 
+		<!-- 9 -->
 
+		<div id="prop9" class="buy-single-single" style="display:none">
+			<div class="col-md-12">
+				<div class="middle-side">
+					<h4 id="propertyname">Palm Terraces, Near to English Point, Nyali, Mombasa </h4>
+				</div>
+				<div class="col-md-9 single-box">
 
-								It is well planned and is built with all modern construction methods. The project offers 11 units of 3BR and 9 units of 4BR.
+					<div class=" buying-top">
+						<div class="flexslider">
+								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
+									<li data-thumb="images/property9/1H.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property9/1H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property9/2H.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property9/2H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property9/3H.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property9/3H.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property9/4H.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property9/4H.jpg" draggable="false">
+									</li>
+								</ul>
+						</div>
+						<!-- FlexSlider -->
+						<script defer src="../js/jquery.flexslider.js"></script>
+						<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-box-right right-immediate">
+						<h4>Featured Communities</h4>
+						<div class="scrollbar">
+							<div id="featuredproperties" class="force-overflow">
+								<div class="single-box-img" >
+									<div class="box-img">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=2">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=2">ZAWADI APARTMENTS</a></p>
+										<a href="property.html?pid=2" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
+										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					   </div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12">
+				<div class="buy-sin-single">
+					<div class="col-sm-5 middle-side immediate">
+						<h4>Possession: Immediate</h4>
+						<!--<p><span class="bath">BR </span>: <span class="two">3(53 * 31)</span><span class="two">4(55 * 37)</span></p>
+						<p><span class="bath1">Built-up Area <span style="font-size:10px;"> (Sq. ft)</span></span>: <span class="two">1665</span><span class="two">2447</span></p>
+						<p><span class="bath2">Plot Area <span style="font-size:10px;">(Sq. ft)</span></span>:<span class="two">1633</span><span class="two">2031</span></p>
+						<p><span class="bath3">Ground <span style="font-size:10px;">(Sq. ft)</span></span> : <span class="two">662</span><span class="two">1231</span></p>
+						<p><span class="bath4">Upper Floor <span style="font-size:10px;">(Sq. ft)</span></span> : <span class="two">1033</span><span class="two">1261</span></p>
+						<p><span class="bath5">KSH <span style="font-size:10px;">(Millions)</span> </span>:<span class="two">10.5</span><span class="two">12.5</span></p>
+						-->
+						<table class="table" id="propertydetails">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">For Rent and Sale</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-in <span style="font-size: 10px;">(year)</span></td>
+									<td id="propertybr">2014</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">BR <span style="font-size: 10px;"></span></td>
+									<td id="propertybr">3</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">KSH<span style="font-size: 10px;">(Million)</span></td>
+									<td>18 Sea Facing</td>
+									<td>16 Town Facing</td>
+								</tr>								
+							</tbody>
+						</table>
+					</div>
+					<div class="col-sm-7 buy-sin">
+						<h4>Description</h4>
+						<div id="propertydescription">
+							<p>
+								Enjoy this luxurious lifestyle that blends perfectly with contemporary features offering you a style of living that’s truly world class. This apartments offer ample leisure pursuits, large open to sky deck at the courtyard floor. Each apartment decor is enhanced with the usage of verified tiles for floors of the living room and bedroom, while ceramic tiles adorn the kitchen as well as bathroom flooring and walls. 3 bedrooms all en suit with a perfect sea view in Nyali. Features 3 bedrooms all en-suit private balcony spacious living spaces.
 							</p>
 						</div>
 
@@ -2136,35 +3218,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="clearfix"></div><br />
 					<div class="col-sm-12">
-						<h4 style="font-weight:bold;" id="headeraddndetails">The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:</h4>
+						<h4 style="font-weight:bold;" id="headeraddndetails">Features:</h4>
 						<br />
 						<div class="col-sm-6 list">
 							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
-								<li><i></i>Built-in wardrobes</li>
-								<li><i></i>Satellite TV & Phone points</li>
-								<li><i></i>AC points & Piping</li>
-								<li><i></i>UPVC windows</li>
-								<li><i></i>Wooden main door</li>
-								<li><i></i>Vitrified tiled floor</li>
-								<li><i></i>High-lighted wall in living room</li>
-								<li><i></i>Built-in cabinets with granite counter tops</li>
-								<li><i></i> Designer Floor and wall tiles in Kitchen and Bathroom</li>
-								<li><i></i>Universal sanitary ware, fitting and accessories</li>
-							</ul>
-						</div>
-						<div class="col-sm-6 list">
-							<ul class="" style="list-style-type:disc;" id="rightaddndetails">
+								<li><i></i>2 Elevators</li>
+								<li><i></i>Power Backup Generator </li>
+								<li><i></i>Swimming Pool- Terrace</li>
+								<li><i></i>Electric Fence</li>
 								<li><i></i>Ample Parking</li>
-								<li><i></i>Backup generators for vantage areas</li>
-								<li><i></i>Swimming Pool (common for residents)</li>
-								<li><i></i>Borehole Water</li>
-								<li><i></i>Perimeter Wall</li>
-								<li><i></i>Security Fencing</li>
-								<li><i></i>Developed Garden</li>
-								<li><i></i>Cabro road within the project premises</li>
+								<li><i></i>Nyali beach in Vicinity</li>
+								<li><i></i>Nyali Cinemax and Shopping Centre nearby</li>
+								<li><i></i>Apartments Facing the Indian ocean and Mombasa Town.</li>
 							</ul>
-						</div>
-						<div class="clearfix"></div>
+						</div><div class="clearfix"></div><br>
 						<div class="">
 							<a href="contact.html" class="hvr-sweep-to-right more">Contact Builder</a>
 						</div>
@@ -2189,8 +3256,741 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-		</div>
+		</div> 
 
+		<!-- 10 -->
+
+		<div id="prop10" class="buy-single-single" style="display:none">
+			<div class="col-md-12">
+				<div class="middle-side">
+					<h4 id="propertyname">The Shell, Kizingo </h4>
+				</div>
+				<div class="col-md-9 single-box">
+
+					<div class=" buying-top">
+						<div class="flexslider">
+								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
+									<li data-thumb="images/property10/1h.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property10/1h.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property10/2h.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property10/2h.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property10/3h.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property10/3h.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property10/4h.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property10/4h.jpg" draggable="false">
+									</li>
+								</ul>
+						</div>
+						<!-- FlexSlider -->
+						<script defer src="../js/jquery.flexslider.js"></script>
+						<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-box-right right-immediate">
+						<h4>Featured Communities</h4>
+						<div class="scrollbar">
+							<div id="featuredproperties" class="force-overflow">
+								<div class="single-box-img" >
+									<div class="box-img">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=2">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=2">ZAWADI APARTMENTS</a></p>
+										<a href="property.html?pid=2" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
+										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1h.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					   </div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12">
+				<div class="buy-sin-single">
+					<div class="col-sm-5 middle-side immediate">
+						<h4>Possession: Immediate</h4>
+						<!--<p><span class="bath">BR </span>: <span class="two">3(53 * 31)</span><span class="two">4(55 * 37)</span></p>
+						<p><span class="bath1">Built-up Area <span style="font-size:10px;"> (Sq. ft)</span></span>: <span class="two">1665</span><span class="two">2447</span></p>
+						<p><span class="bath2">Plot Area <span style="font-size:10px;">(Sq. ft)</span></span>:<span class="two">1633</span><span class="two">2031</span></p>
+						<p><span class="bath3">Ground <span style="font-size:10px;">(Sq. ft)</span></span> : <span class="two">662</span><span class="two">1231</span></p>
+						<p><span class="bath4">Upper Floor <span style="font-size:10px;">(Sq. ft)</span></span> : <span class="two">1033</span><span class="two">1261</span></p>
+						<p><span class="bath5">KSH <span style="font-size:10px;">(Millions)</span> </span>:<span class="two">10.5</span><span class="two">12.5</span></p>
+						-->
+						<table class="table" id="propertydetails">
+							<tbody>
+								<tr>
+									<td style="font-weight:bold;">Total Plot Area<span style="font-size: 10px;">(Sq. m)</span></td>
+									<td>282.5 </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;"Ground >Built-up Area <span style="font-size: 10px;">(Sq. m)</span></td>
+									<td>127 </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">First floor Built-up Area <span style="font-size: 10px;">(Sq. m)</span></td>
+									<td>169 </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Total Built-up Area <span style="font-size: 10px;">(Sq. m)</span></td>
+									<td>296 </td>
+									<td></td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Pre-launch KSH <span style="font-size: 10px;">(Million)</span></td>
+									<td id="propertybr">40</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Launch KSH <span style="font-size: 10px;">(Million)</span></td>
+									<td>45</td>
+								</tr>								
+							</tbody>
+						</table>
+
+
+
+					</div>
+					<div class="col-sm-7 buy-sin">
+						<h4>Description</h4>
+						<div id="propertydescription">
+							<p>
+								At The shell, the homely splendour may cut you off from the rest of the mundane world around. Yet, the central location of the project in Mombasa means that you continue to remain well networked.
+
+
+								Kizingo is no longer just about its Law court and President's house. It is also haven in the city, conveniently straddled between the town & the coast and well connected to rest of Mombasa. The location itself could tempt you in seeking a home with us.
+
+ 
+
+									The Shell is not just about magnificence. It sublime state of  mind, the scale of thought you have achieved.
+
+ 
+
+												At  The Shell , it is an external embodiment of your distinction from the rest.
+
+ 
+
+											The magnificent villas at Kizingo are well equipped to match up to the grandness of its prospective residents. So if you grab the headlines for your enterprise and acumen, so do your home for their scale . Enter a world where your villa at Kizingo takes the form of its finest refinements.
+
+
+							</p>
+						</div>
+
+
+
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12 property3-extradetails" style="display:none;">
+						<h4 style="font-weight:bold;">The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<h5>SCHOOLS ( within1.3 km)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nyali School</li>
+								<li><i></i>Nyali Acadamy Senior School</li>
+								<li><i></i>Nyali High School</li>
+								<li><i></i>Shree Swami Narayan School</li>
+								<li><i></i>5 Star of David Christian School</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>RECREATION AREAS (800m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nyali golf club</li>
+								<li><i></i>Bahari Beach</li>
+								<li><i></i>Reef Hotel</li>
+								<li><i></i>Hallar Park</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>HOSPITALS (700 m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Aga khan Hospital Centre</li>
+								<li><i></i>Swiss Cottage Hospital</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>SHOPPING DESTINATION (300 m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nakumatt City Mall</li>
+								<li><i></i>Naivas</li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12">
+						<h4 style="font-weight:bold;" id="headeraddndetails">Unmatched Amenities for your world !!</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
+								<li><i></i>Swimming Pool</li>
+								<li><i></i>Landscape at backyard </li>
+								<li><i></i>Garden</li>
+								<li><i></i>3 car parking space</li>
+								<li><i></i>Private Terrace</li>
+								<li><i></i>Utility Yard</li>
+								<li><i></i>Grand Entrance Main door</li>
+								<li><i></i>Security</li>
+								<li><i></i>Borehole water</li>
+								<li><i></i>Uninterrupted power supply</li>
+								<li><i></i>Elite Neighbourhood</li>
+								<li><i></i>Green Surroundings</li>
+								<li><i></i>Good Infrastructure nearby</li>
+								<li><i></i>Excellent fittings, fixtures and sanitary wares.</li>
+							</ul>
+						</div><div class="clearfix"></div><br>
+						<div class="">
+							<a href="contact.html" class="hvr-sweep-to-right more">Contact Builder</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="clearfix"></div><br />
+				<div class="map-buy-single">
+					<h4>Neighborhood Info</h4>
+					<div class="map-buy-single1">
+						<iframe id="propertymap" src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+					</div>
+				</div>
+				<!--<div class="video-pre">
+						<h4>Video Presentation</h4>
+						<iframe src="https://player.vimeo.com/video/63931426"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+					</div>-->
+
+			</div>
+
+
+
+		</div> 
+
+		<!-- 11 -->
+
+		<div id="prop12" class="buy-single-single" style="display:none">
+			<div class="col-md-12">
+				<div class="middle-side">
+					<h4 id="propertyname">KISIMANI HEIGHTS, behind Mary Joy Primary School, Mombasa Malindi Road,Kisauni, Mombasa </h4>
+				</div>
+				<div class="col-md-9 single-box">
+
+					<div class=" buying-top">
+						<div class="flexslider">
+								<ul class="slides" id="propertyimages" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-2469px, 0px, 0px);">
+									<li data-thumb="images/property1/4.jpg" class="clone" aria-hidden="true" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="">
+										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/2.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/2.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/3.jpg" class="flex-active-slide" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/3.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/4.jpg" class="" style="width: 823px; float: left; display: block;">
+										<img class="gallery-images" "="" src="images/property1/4.jpg" draggable="false">
+									</li>
+									<li data-thumb="images/property1/1.jpg" style="width: 823px; float: left; display: block;" class="clone" aria-hidden="true">
+										<img class="gallery-images" "="" src="images/property1/1.jpg" draggable="false">
+									</li>
+								</ul>
+						</div>
+						<!-- FlexSlider -->
+						<script defer src="../js/jquery.flexslider.js"></script>
+						<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="single-box-right right-immediate">
+						<h4>Featured Communities</h4>
+						<div class="scrollbar">
+							<div id="featuredproperties" class="force-overflow">
+								<div class="single-box-img" style="display:none;">
+									<div class="box-img">
+										<a href="property.html?pid=1">
+											<img class="img-responsive" src="images/property1/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=1">BAMBURI COCONUT VILLAS, BAMBURI MOMBASA</a></p>
+										<a href="property.html?pid=1" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=2">
+											<img class="img-responsive" src="images/property2/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=2">ZAWADI APARTMENTS</a></p>
+										<a href="property.html?pid=2" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=3">
+											<img class="img-responsive" src="images/property3/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></p>
+										<a href="property.html?pid=3" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=4">
+											<img class="img-responsive" src="images/property4/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=4">PARKLAND SQUARE NAIROBI </a></p>
+										<a href="property.html?pid=4" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=5">
+											<img class="img-responsive" src="images/property5/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=5">AZALEA HEIGHTS</a></p>
+										<a href="property.html?pid=5" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=6">
+											<img class="img-responsive" src="images/property6/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=6">JOHARI APARTMENTS</a></p>
+										<a href="property.html?pid=6" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=7">
+											<img class="img-responsive" src="images/property7/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=7">KISIMANI HEIGHTS</a></p>
+										<a href="property.html?pid=7" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=8">
+											<img class="img-responsive" src="images/property8/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=8">MESHAAL HEIGHTS</a></p>
+										<a href="property.html?pid=8" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=9">
+											<img class="img-responsive" src="images/property9/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=9">Palm Terraces</a></p>
+										<a href="property.html?pid=9" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=10">
+											<img class="img-responsive" src="images/property10/1H.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=10">The Shell, Kizingo</a></p>
+										<a href="property.html?pid=10" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="single-box-img">
+									<div class="box-img">
+										<a href="property.html?pid=11">
+											<img class="img-responsive" src="images/property11/1V.jpg" alt="">
+										</a>
+									</div>
+									<div class="box-text">
+										<p><a href="property.html?pid=11">BAMBURI COCONUT VILLAS</a></p>
+										<a href="property.html?pid=11" class="in-box">More Info</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+					   </div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12">
+				<div class="buy-sin-single">
+					<div class="col-sm-5 middle-side immediate">
+						<h4>Possession: Immediate</h4>
+						<!--<p><span class="bath">BR </span>: <span class="two">3(53 * 31)</span><span class="two">4(55 * 37)</span></p>
+						<p><span class="bath1">Built-up Area <span style="font-size:10px;"> (Sq. ft)</span></span>: <span class="two">1665</span><span class="two">2447</span></p>
+						<p><span class="bath2">Plot Area <span style="font-size:10px;">(Sq. ft)</span></span>:<span class="two">1633</span><span class="two">2031</span></p>
+						<p><span class="bath3">Ground <span style="font-size:10px;">(Sq. ft)</span></span> : <span class="two">662</span><span class="two">1231</span></p>
+						<p><span class="bath4">Upper Floor <span style="font-size:10px;">(Sq. ft)</span></span> : <span class="two">1033</span><span class="two">1261</span></p>
+						<p><span class="bath5">KSH <span style="font-size:10px;">(Millions)</span> </span>:<span class="two">10.5</span><span class="two">12.5</span></p>
+						-->
+						<table class="table" id="propertydetails">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">Studio Apt</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area <span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td id="propertybr">430</td>
+									<td>450</td>
+									<td>500</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">KSH <span style="font-size: 10px;">(Million)</span></td>
+									<td id="propertybr">2.2</td>
+									<td>2.4</td>
+									<td>2.7</td>
+								</tr>								
+							</tbody>
+						</table>
+						<table class="table">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">1 BR (2nd Floor)</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td>660 </td>
+									<td>760</td>
+									<td>800 </td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Rent<span style="font-size: 10px;">(Per month)</span></td>
+									<td>10,000 -  15,000 </td>
+									<td>10,000 -  15,000</td>
+									<td>10,000 -  15,000 </td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">2 BR (3rd  to 9th )</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td>1000</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">KSH<span style="font-size: 10px;">(Million)</span></td>
+									<td>4.9</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Rent<span style="font-size: 10px;">(Per month)</span></td>
+									<td>18,000 - 23,000</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table">
+							<tbody>
+								<h5 style="font-weight:bold;font-size: 18px;">3 BR (3rd  to 9th )</h5>
+								<tr>
+									<td style="font-weight:bold;">Built-up Area<span style="font-size: 10px;">(Sq. ft)</span></td>
+									<td>1200 </td>
+									<td>1250</td>
+									<td>1340 </td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">KSH<span style="font-size: 10px;">(Million)</span></td>
+									<td>5.5 </td>
+									<td>5.6</td>
+									<td>5.8</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold;">Rent<span style="font-size: 10px;">(Per month)</span></td>
+									<td>25,000 - 28,000</td>
+									<td>25,000 - 28,000</td>
+									<td>25,000 - 28,000</td>
+								</tr>
+							</tbody>
+						</table>
+
+
+
+					</div>
+					<div class="col-sm-7 buy-sin">
+						<h4>Description</h4>
+						<div id="propertydescription">
+							<p>
+								Kisimani Heights apartments located at KISIMANI, behind Mary Joy Primary School, Mombasa Malindi Road in Bombolulu area of  Mombasa. It is a residential tower of 9 floors having following configurations of bedrooms.  They have been designed carefully taking into consideration modern living aspirations and creating the homely feeling with spacious unit sizes & conveniently designed floor-plans.
+							</p>
+						</div>
+
+
+
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12 property3-extradetails" style="display:none;">
+						<h4 style="font-weight:bold;">The villas will have exquisite finishes and amenities that will make your house much more stylish, safe and comfortable. Some of them include:</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<h5>SCHOOLS ( within1.3 km)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nyali School</li>
+								<li><i></i>Nyali Acadamy Senior School</li>
+								<li><i></i>Nyali High School</li>
+								<li><i></i>Shree Swami Narayan School</li>
+								<li><i></i>5 Star of David Christian School</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>RECREATION AREAS (800m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nyali golf club</li>
+								<li><i></i>Bahari Beach</li>
+								<li><i></i>Reef Hotel</li>
+								<li><i></i>Hallar Park</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>HOSPITALS (700 m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Aga khan Hospital Centre</li>
+								<li><i></i>Swiss Cottage Hospital</li>
+							</ul>
+						</div>
+						<div class="col-sm-6 list">
+							<h5>SHOPPING DESTINATION (300 m away)</h5>
+							<ul class="" style="list-style-type:disc;" id="">
+								<li><i></i>Nakumatt City Mall</li>
+								<li><i></i>Naivas</li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div><br />
+					<div class="col-sm-12">
+						<h4 style="font-weight:bold;" id="headeraddndetails">The amenities are excellent in this project and is ideal for investment. They are-</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
+								<li><i></i>Located Strategically on peaceful & green environment.</li>
+								<li><i></i>The Project is behind Mary Joy Primary school. </li>
+								<li><i></i>2 Way access to the Project via – Mombasa Malindi Road and Mary joy School Road.</li>
+								<li><i></i>Church and Mosque at a walking distance away.</li>
+								<li><i></i>Public Beaches is at a short driving distance of 15 Minutes.</li>
+								<li><i></i>Promising commercial area and residential developments happening around.</li>
+								<li><i></i>Easy access to Public Transport and connection to prominent shopping destination.</li>
+								<li><i></i>Great Potential for Appreciation of property value.</li>
+								<li><i></i>Near to City Mall, Nakumatt, Naivas, Cinemax.</li>
+								<li><i></i>Free from day to day traffic and crowd.</li>
+								<li><i></i>Quality construction by experienced contracting firm.</li>
+								<li><i></i>Project by team of experts of their respective fields on board.</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div><br>
+						<h4 style="font-weight:bold;" id="headeraddndetails">AMENITIES</h4>
+						<br />
+						<div class="col-sm-6 list">
+							<ul class="" style="list-style-type:disc;" id="leftaddndetails">
+								<li><i></i>Borehole Water</li>
+								<li><i></i>Car Parking for 2 & 3 BR</li>
+								<li><i></i>Lift</li>
+								<li><i></i>Staircase</li>
+								<li><i></i>Wardrobes</li>
+								<li><i></i>UPVC windows</li>
+								<li><i></i>Security Fencing</li>
+								<li><i></i>Perimeter Wall</li>
+								<li><i></i>Fairdeal Shopping Centre in Vicinity</li>
+								<li><i></i>Playing ground nearby to project location</li>
+								<li><i></i>Architecturally well designed plan for ample light and air</li>
+								<li><i></i>Roof top Swimming Pool</li>
+								<li><i></i>Utility area</li>
+								<li><i></i>24 hours Modern Security services</li>
+							</ul>
+						</div><div class="clearfix"></div><br>
+						<div class="">
+							<a href="contact.html" class="hvr-sweep-to-right more">Contact Builder</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="clearfix"></div><br />
+				<div class="map-buy-single">
+					<h4>Neighborhood Info</h4>
+					<div class="map-buy-single1">
+						<iframe id="propertymap" src="" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+					</div>
+				</div>
+				<!--<div class="video-pre">
+						<h4>Video Presentation</h4>
+						<iframe src="https://player.vimeo.com/video/63931426"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+					</div>-->
+
+			</div>
+
+
+
+		</div> 
 
 
 	</div>
