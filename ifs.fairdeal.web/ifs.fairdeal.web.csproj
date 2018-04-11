@@ -322,10 +322,20 @@
     <Content Include="v1\about.html" />
     <Content Include="v1\career.html" />
     <Content Include="v1\contact.html" />
+    <Content Include="v1\images\logo.png" />
     <Content Include="v1\images\property1\1.jpg" />
     <Content Include="v1\images\property1\2.jpg" />
     <Content Include="v1\images\property1\3.jpg" />
     <Content Include="v1\images\property1\4.jpg" />
+    <Content Include="v1\images\property2\1.jpg" />
+    <Content Include="v1\images\property2\2.jpg" />
+    <Content Include="v1\images\property2\3.jpg" />
+    <Content Include="v1\images\property2\4.jpg" />
+    <Content Include="v1\images\property3\1.jpg" />
+    <Content Include="v1\images\property5\1.jpg" />
+    <Content Include="v1\images\property5\2.jpg" />
+    <Content Include="v1\images\property6\1.jpg" />
+    <Content Include="v1\images\property6\2.jpg" />
     <Content Include="v1\index.html" />
     <Content Include="v1\landing.html" />
     <Content Include="v1\residential.html" />
@@ -359,6 +369,11 @@
     <Content Include="v1\images\property1\town houses _ 3 bedroom first floor.pdf" />
     <Content Include="v1\images\property1\town houses _ 3 bedroom ground.pdf" />
     <Content Include="v1\images\property1\town houses _ 4 bedroom first floor.pdf" />
+    <Content Include="v1\images\property2\Bamburi Coconut Villas site plan.pdf" />
+    <Content Include="v1\images\property2\town houses 4 Bedroom. Ground Floor.pdf" />
+    <Content Include="v1\images\property2\town houses _ 3 bedroom first floor.pdf" />
+    <Content Include="v1\images\property2\town houses _ 3 bedroom ground.pdf" />
+    <Content Include="v1\images\property2\town houses _ 4 bedroom first floor.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -371,6 +386,7 @@
     <Folder Include="aspnet_client\system_web\4_0_30319\" />
     <Folder Include="bin\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="v1\images\property4\" />
     <Folder Include="v1\properties\" />
   </ItemGroup>
   <ItemGroup>
