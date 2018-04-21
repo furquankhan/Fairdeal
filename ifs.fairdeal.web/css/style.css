@@ -1861,6 +1861,7 @@ a.in-box:hover {
 }
 .single-box-img {
   	padding: 1.5em 0 0;
+    cursor:pointer;
 }
 .single-box-right {
   	padding: 2em 0 0;

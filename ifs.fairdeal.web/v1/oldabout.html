@@ -1,4 +1,6 @@
-﻿<!--A Design by W3layouts 
+﻿
+
+<!--A Design by W3layouts 
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -30,40 +32,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
     <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
     <script>
-    var isFirst = true;
-    var pid = 0;
-        $(function () {        
-            LoadPage("index.html",bindPropertyClick);
-            $(".top-nav a").click(function(){debugger;
+        var isFirst = true;
+        var pid = 0;
+        $(function () {
+            LoadPage("index.html", bindPropertyClick);
+            $(".top-nav a").click(function () {
+                debugger;
                 $(".top-nav a").removeClass("active");
                 $(this).addClass("active");
                 var page = $(this).attr("data-action");
-                if(page == "index.html" || page == "residential.html")
-                    LoadPage(page,bindPropertyClick);
+                if (page == "index.html" || page == "residential.html")
+                    LoadPage(page, bindPropertyClick);
                 else
                     LoadPage(page);
             });
-            
+
         });
-        
-        function bindPropertyClick()
-        {
-            $(".propclick").unbind("click").bind("click", function(){debugger;
+
+        function bindPropertyClick() {
+            $(".propclick").unbind("click").bind("click", function () {
+                debugger;
                 var split = $(this).attr("data-action").split("?");
                 var page = split[0];
                 pid = split[1].split("=")[1];
-                LoadPage(page,function(){
+                LoadPage(page, function () {
                     $(".detailprop").hide();
-                    $("#prop"+pid).show();
+                    $("#prop" + pid).show();
                     bindPropertyClick();
-                });                            
+                });
             });
         }
-        function LoadPage(e,callback){
-            $.get(e,function(data){debugger;
-                if(e == "property.html")
-                {
-                    data = $(data).find('#prop'+pid).append($(data).find('script#propScr'));
+        function LoadPage(e, callback) {
+            $.get(e, function (data) {
+                debugger;
+                if (e == "property.html") {
+                    data = $(data).find('#prop' + pid).append($(data).find('script#propScr'));
                     $(".mainpage").html('<div class="container"></div>');
                     $(".mainpage .container").html(data);
                     $('.flexslider').flexslider({
@@ -73,29 +76,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 }
                 else
                     $(".mainpage").html(data);
-                if(callback !=  undefined)
+                if (callback != undefined)
                     callback();
                 return;
-                
+
 
                 // $(".headbottom").unbind("click").bind("click", function(){debugger;
                 //     var page = $(this).attr("data-action");
                 //     LoadPage(page);
                 // });
 
-                
-                
+
+
             });
         }
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    }
-    
+
     </script>
 
     <style>
@@ -208,13 +211,188 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             <div class="clearfix"></div>
         </div>
-    </div>
-    <!--//-->
-    <div class="mainpage">
+    </div><!--//-->	
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>About</span></h3> 
+	<!--
+	<div class="menu-right">
+		 <ul class="menu">
+			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
+			<ul class="cute">
+				<li class="subitem1"><a href="buy.html">Buy </a></li>
+				<li class="subitem2"><a href="buy.html">Rent </a></li>
+				<li class="subitem3"><a href="buy.html">Hostels </a></li>
+				<li class="subitem1"><a href="buy.html">Resale </a></li>
+				<li class="subitem2"><a href="loan.html">Home Loan</a></li>
+				<li class="subitem3"><a href="buy.html">Apartment </a></li>
+				<li class="subitem3"><a href="dealers.html">Dealers</a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+        -->
+	<div class="clearfix"> </div>
+		<!--initiate accordion-->
+		<script type="text/javascript">
+			$(function() {
+			    var menu_ul = $('.menu > li > ul'),
+			           menu_a  = $('.menu > li > a');
+			    menu_ul.hide();
+			    menu_a.click(function(e) {
+			        e.preventDefault();
+			        if(!$(this).hasClass('active')) {
+			            menu_a.removeClass('active');
+			            menu_ul.filter(':visible').slideUp('normal');
+			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+			        } else {
+			            $(this).removeClass('active');
+			            $(this).next().stop(true,true).slideUp('normal');
+			        }
+			    });
+			
+			});
+		</script>
+      		
+	</div>
+</div>
+<!--//header-->
+<div class="about">	
+	<div class="about-head">
+		<div class="container">
+			<h3>About Us</h3>
+				<div class="about-in">
+					<!--<h6 ><a href="blog_single.html">Lorem ipsum dolor sit amet, consectetur adipisci ngelit. Donec nisi sem, vestibulum Etortor tortor in turpis. Proin mauris nulla, rutrum aliquet arcu vel</a></h6>-->
+					<p>The Fairdeal Group of Companies is a fast growing family owned business. We are a company geared towards providing kenyans with a plethora of choices in the construction and real estate industries. With five dedicated divisions, Fairdeal Properties Ltd, Fairdeal Furniture Ltd, Fairdeal Glass Ltd, Fairdeal Glazing Ltd & Aqiq Trading Ltd our aim is to cater to any of our customer's needs by providing quality products at fair prices.</p>
+                    <br />
+                    <p>
+                         Our progression into the real estate industry stems from the experience of our sister companies dealing in the building material and finishing businesses. With several mega projects to our name, Fairdeal Properties is present in both Mombasa and Nairobi.
+                         <ul>
+                             <li>Over 2,000,000 sqft of construction in a period of 7 years</li>
+                             <li>500+ apartments completed and handed over</li>
+                             <li>Developers of landmark buildings such as Epic Business Park and Fairdeal Plaza</li>
+                             <li>Mega warehousing projects in Kikambala, Embakassi and Syokimau</li>
+                             <li>9 projects in Mombasa and 8 projects in Nairobi constructed or ongoing</li>
+                        </ul>
+                    </p>
+				</div>
+		</div>
+	</div>
+    
+	<!---->
+	
+	<!---->
+	<!---->
+	
+	<!---->
+	<!---->
+	<div class="about-bottom">
+		<div class="container">
+				<div class="col-md-6 bottom-about">
+					<h1>OUR GUIDING PRINCIPLES</h1><br />
+					<p>
+                        <h4>Sustainability through Customers</h4>
+                        <span>Our company's greatest asset is its customers, because without customers there is no company.</span>
+                        <h4>Relationships through Trust and Reliability</h4>
+                        <span>Providing real service means you must add something which cannot be bought or measured with money, and that is sincerity and integrity.</span>
+                        <h4>Growth and Advancement through Diversity</h4>
+                        <span>Learning happens through differences, not similarities. We encourage our people to challenge the status quo, offer solutions and modernize our businesses.</span>
+                    </p>
 
-    </div>
 
-    <!--footer-->
+
+					
+				</div>
+				<div class="col-md-6 bottom-about1">
+					<!--<iframe src="https://player.vimeo.com/video/12690053"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!---->
+    <div class="phone">
+		<div class="container">
+			<div class="col-md-6">
+					<div class="text-1">
+						<h1>OUR MISSION</h1>
+						<p>To delight customer by providing quality life spaces through continuous innovation.</p>
+					</div>
+                <br />
+					<div class="text-1">
+						<h1>OUR VISION</h1>
+						<p>Ensure our customer's hard-earned money is transformed into their dream homes and offices.</p>
+					</div>
+			</div>
+			<div class="col-md-6 phone-text">
+                <img src="../images/mission.jpg" class="img-responsive" alt="">
+				
+			</div>
+		</div>
+	</div>
+		<div class="container">
+		<div class="content-events">
+				<h3> Events & News</h3>
+				<div class="news">
+					<div class="col-md-4 new-more">
+						<div class="event">
+							<h4>26/06/2015</h4>
+							<h6><a href="blog_single.html">Sed ut perspiciatis unde omnis </a></h6>
+						</div>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+						<a class="hvr-sweep-to-right more" href="blog_single.html">Read More</a>
+					</div>
+					<div class="col-md-4 new-more">
+						<div class="event">
+							<h4>26/06/2015</h4>
+							<h6><a href="blog_single.html">Sed ut perspiciatis unde omnis </a></h6>
+						</div>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+						<a class="hvr-sweep-to-right more" href="blog_single.html">Read More</a>
+					</div>
+					<div class="col-md-4 new-more">
+						<div class="event">
+							<h4>26/06/2015</h4>
+							<h6><a href="blog_single.html">Sed ut perspiciatis unde omnis </a></h6>
+						</div>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+						<a class="hvr-sweep-to-right more" href="blog_single.html">Read More</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="news">
+					<div class="col-md-4 new-more">
+						<div class="event">
+							<h4>26/06/2015</h4>
+							<h6><a href="blog_single.html">Sed ut perspiciatis unde omnis </a></h6>
+						</div>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+						<a class="hvr-sweep-to-right more" href="blog_single.html">Read More</a>
+					</div>
+					<div class="col-md-4 new-more">
+						<div class="event">
+							<h4>26/06/2015</h4>
+							<h6><a href="blog_single.html">Sed ut perspiciatis unde omnis </a></h6>
+						</div>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+						<a class="hvr-sweep-to-right more" href="blog_single.html">Read More</a>
+					</div>
+					<div class="col-md-4 new-more">
+						<div class="event">
+							<h4>26/06/2015</h4>
+							<h6><a href="blog_single.html">Sed ut perspiciatis unde omnis </a></h6>
+						</div>
+						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
+						<a class="hvr-sweep-to-right more" href="blog_single.html">Read More</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!---->
+
+</div>
+
+            <!--footer-->
 <div class="footer">
 	<div class="container">
 		<div class="footer-top-at">
