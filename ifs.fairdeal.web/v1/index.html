@@ -125,7 +125,7 @@
                         <li>
                             <div style="margin:0 15px;">
                                 <a data-action="property.html/3" class="mask propclick">
-                                    <img class="img-responsive zoom-img" style="width:315px;" src="images/property3/1V.jpg" alt="">
+                                    <img class="img-responsive zoom-img" style="width:315px;" src="images/property4/3V.jpg" alt="">
                                     <!--<span class="four">{PROPERTYAMOUNT}</span>-->
                                 </a>
                                 <div class="most-1">
@@ -185,7 +185,7 @@
                         <li>
                             <div style="margin:0 15px;">
                                 <a data-action="property.html/8" class="mask propclick">
-                                    <img class="img-responsive zoom-img" style="width:315px;" src="images/property8/1V.jpg" alt="">
+                                    <img class="img-responsive zoom-img" style="width:315px;" src="images/property9/2V.jpg" alt="">
                                     <!--<span class="four">{PROPERTYAMOUNT}</span>-->
                                 </a>
                                 <div class="most-1">
@@ -498,16 +498,12 @@
     <script>
         $(function () {debugger;
             
-            if(isFirst)
-            {
-                $(".imageslider").not(".callbacks").responsiveSlides({
-                        auto: true,
-                        speed: 500,
-                        namespace: "callbacks",
-                        pager: true,
-                    });
-                  isFirst = false;  
-            }
+            $(".imageslider").not(".callbacks").responsiveSlides({
+                    auto: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    pager: true,
+            });
 
             $('#mostpopular').flexisel({
                     visibleItems: 3,

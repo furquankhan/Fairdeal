@@ -33,15 +33,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     var isFirst = true;
     var pid = 0;
 		$(function () {
-			debugger;
+		    debugger;
 			window.onpopstate = function () {
 				location.reload();
 			}
-			var pages = ['index','contact','about','career','property'];
+			var pages = ['index','contact','about','career','property','residential'];
 			var hash = window.location.hash.replace("#", "");
+			
 
 			if (hash.indexOf("property/") > -1) {
-				pid = hash.split('/')[1];
+			    pid = parseInt(isNaN(hash.split('/')[1]) || hash.split('/')[1] == "" ? 1 : hash.split('/')[1]);
 				hash = hash.split('/')[0];
 			}
 			else if(hash.indexOf("property/") == 0 && hash.indexOf("/") > -1)
@@ -51,15 +52,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$(".top-nav a").removeClass("active");	
 			$(".top-nav a[data-action*='"+hash+"']").addClass("active");
 
+			pid = pid < 1 || pid > 11 ? 1 : pid;
 			LoadPage(hash + ".html");
 
 
-            $(".top-nav a").click(function(){
-                
+			$(".routepage").click(function () {
                 $(this).addClass("active");
 				var page = $(this).attr("data-action").replace('.html', '');
 				bindProperty(page);
-			});
+            });
+
 			
         });
         
@@ -84,16 +86,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			else
 				window.location.hash = "#" + page;
 			location.reload();
-			LoadPage(page + ".html",pid)
 		}
-        function LoadPage(e,pid){
+        function LoadPage(e){debugger;
             $.get(e,function(data){
                 if(e == "property.html")
                 {
                     data = $(data).find('#prop'+pid).append($(data).find('script#propScr'));
                     $(".mainpage").html('<div class="container"></div>');
 					$(".mainpage .container").html(data);
-					$("#prop" + pid);
+					$("#prop" + pid).show();
                     $('.flexslider').flexslider({
                         animation: "slide",
                         controlNav: "thumbnails"
@@ -120,6 +121,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         .propclick {
             cursor:pointer;
         }
+        .logo {
+            cursor:pointer;
+        }
     </style>
 </head>
 <body>
@@ -127,25 +131,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <!--logo-->
             <div class="logo">
-                <h1><a href="index.html" alt="Fair Deal">
+                <h1><a class="routepage" data-action="index.html" alt="Fair Deal">
                     <img src="images/logo.png" width="150px;" height="75px;"/></a></h1>
             </div>
             <div class="topnav" id="myTopnav">
             <!--//logo-->
             <div class="top-nav" style="float: right;padding: 15px 10px;">
-                <a data-action="index.html" class="active">Home</a>
-                <a data-action="about.html">About Us</a>
-                <a data-action="blog.html">Properties</a>
-                <a data-action="contact.html">Contact Us</a>
-                <a data-action="career.html">Careers</a>
+                <a data-action="index.html" class="active routepage">Home</a>
+                <a data-action="about.html" class="routepage">About Us</a>
+                <a data-action="blog.html" class="routepage">Properties</a>
+                <a data-action="contact.html" class="routepage">Contact Us</a>
+                <a data-action="career.html" class="routepage">Careers</a>
                 <a data-action="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
                 <!--<div class="nav-icon">
 				<div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
-						<a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
+						<a data-action="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
 					</div>	
 				
-				<a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+				<a data-action="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
 			
 			</div>--->
                 <div class="clearfix"></div>
@@ -227,6 +231,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="clearfix"></div>
         </div>
     </div>
+    </div>
     <!--//-->
     <div class="mainpage">
 
@@ -239,24 +244,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="blog.html">For Sale By Owner Blog</a></li>
-					<li><a href="mobile_app.html">Mobile</a></li>
-					<li><a href="terms.html">Terms & Conditions</a></li>
-					<li><a href="privacy.html">Privacy Policy</a></li>	
-					<li><a href="blog.html">Blog</a></li>
+					<li><a class="routepage" data-action="about.html">About Us</a></li>
+					<li><a class="routepage" data-action="blog.html">For Sale By Owner Blog</a></li>
+					<li><a class="routepage" data-action="mobile_app.html">Mobile</a></li>
+					<li><a class="routepage" data-action="terms.html">Terms & Conditions</a></li>
+					<li><a class="routepage" data-action="privacy.html">Privacy Policy</a></li>	
+					<li><a class="routepage" data-action="blog.html">Blog</a></li>
 					
 				</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
-						<li><a href="residential.html">Real Estate Brokers</a></li>
-						<li><a href="residential.html">Business Development</a></li>
-						<li><a href="residential.html">Affiliate Programs</a></li>
-						<li><a href="contact.html">Sitemap</a></li>
-						<li><a href="career.html">Careers</a></li>
-						<li><a href="feedback.html">Feedback</a></li>	
+						<li><a class="routepage" data-action="residential.html">Real Estate Brokers</a></li>
+						<li><a class="routepage" data-action="residential.html">Business Development</a></li>
+						<li><a class="routepage" data-action="residential.html">Affiliate Programs</a></li>
+						<li><a class="routepage" data-action="contact.html">Sitemap</a></li>
+						<li><a class="routepage" data-action="career.html">Careers</a></li>
+						<li><a class="routepage" data-action="feedback.html">Feedback</a></li>	
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -265,26 +270,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>Sat-Sun, 8AM-5PM </p>
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
-						<li><a href="#">Live Chat</a></li>
-						<li><a href="faqs.html">Frequently Asked Questions</a></li>
-						<li><a href="suggestion.html">Make a Suggestion</a></li>
+						<li><a class="routepage" data-action="#">Live Chat</a></li>
+						<li><a class="routepage" data-action="faqs.html">Frequently Asked Questions</a></li>
+						<li><a class="routepage" data-action="suggestion.html">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
 				<h4>Property Services</h4>
 				   <ul class="nav-bottom">
-						<li><a href="residential.html">Residential Property</a></li>
-						<li><a href="residential.html">Commercial Property</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="register.html">Register</a></li>
-						<li><a href="typo.html">Short Codes</a></li>	
+						<li><a class="routepage" data-action="residential.html">Residential Property</a></li>
+						<li><a class="routepage" data-action="residential.html">Commercial Property</a></li>
+						<li><a class="routepage" data-action="login.html">Login</a></li>
+						<li><a class="routepage" data-action="register.html">Register</a></li>
+						<li><a class="routepage" data-action="typo.html">Short Codes</a></li>	
 					</ul>	
 					<ul class="social">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="gmail"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>
-						<li><a href="#"><i class="camera"> </i></a></li>
-						<li><a href="#"><i class="dribble"> </i></a></li>
+						<li><a class="routepage" data-action="#"><i> </i></a></li>
+						<li><a class="routepage" data-action="#"><i class="gmail"> </i></a></li>
+						<li><a class="routepage" data-action="#"><i class="twitter"> </i></a></li>
+						<li><a class="routepage" data-action="#"><i class="camera"> </i></a></li>
+						<li><a class="routepage" data-action="#"><i class="dribble"> </i></a></li>
 					</ul>
 			</div>
 		<div class="clearfix"> </div>
@@ -293,7 +298,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="index.html">REAL HOME</a></h2>
+				<h2><a class="routepage" data-action="index.html">REAL HOME</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
 				<p >© 2015 Real Home. All Rights Reserved | Design by  <a href="https://about.me/furquan.khan" target="_blank">Furquan Khan</a> </p>
