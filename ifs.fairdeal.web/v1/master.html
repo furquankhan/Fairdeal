@@ -47,9 +47,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			}
 			else if(hash.indexOf("property/") == 0 && hash.indexOf("/") > -1)
 				hash = hash.split("/")[0];
-			if (pages.indexOf(hash) == -1)
-				hash = 'index';
-			$(".top-nav a").removeClass("active");	
+			if (pages.indexOf(hash) == -1) {
+			    hash = 'index';
+			    window.location.hash = hash;
+			}
+			$(".top-nav a").removeClass("active");
 			$(".top-nav a[data-action*='"+hash+"']").addClass("active");
 
 			pid = pid < 1 || pid > 11 ? 1 : pid;
