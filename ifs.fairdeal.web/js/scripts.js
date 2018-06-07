@@ -16,7 +16,6 @@ var api = {
             data: JSON.stringify(info),
             responseType: "json",
             success: function (result) {
-                debugger;
                 if (typeof (onSuccess) == "function") {
                     result = result.replace(/\n/g, ' ').replace(/\r/g, ' ');
                     data = $.parseJSON('[' + result + ']');
@@ -25,7 +24,6 @@ var api = {
                     services.OnComplete(result);
             },
             error: function (result) {
-                debugger;
                 if (typeof (onError) == "function") {
                     onError(result)
                 } else
