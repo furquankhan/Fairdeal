@@ -1,0 +1,217 @@
+﻿
+    <!--//-->
+    <div class=" banner-buying">
+        <div class=" container">
+            <h3><span>Commercial</span></h3>
+            <!--
+	
+            <div class="clearfix"></div>
+            <!--initiate accordion-->
+            <script type="text/javascript">
+                $(function () {
+                    var menu_ul = $('.menu > li > ul'),
+                           menu_a = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function (e) {
+                        e.preventDefault();
+                        if (!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true, true).slideUp('normal');
+                        }
+                    });
+
+                });
+            </script>
+
+        </div>
+    </div>
+    <!--//header-->
+    <div class="container">
+
+        <!--price-->
+        <div class="price" style="display:none;">
+            <div class="price-grid">
+                <div class="col-sm-4 price-top">
+                    <h4>City</h4>
+                    <select class="in-drop ddl_city" onchange="loadProjects();">
+                        <option value="">Select City</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="surat">Surat</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 price-top">
+                    <h4>Category</h4>
+                    <select class="in-drop ddl_category" onchange="loadProjects();">
+                        <option value="">Select Category</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="independenthouse">Independent House</option>
+                        <option value="rowhouse">Row House</option>
+                        <option value="villa">Villa</option>
+                        <option value="builderfloor">Builder Floor</option>
+                        <option value="farmhouse">Farm House</option>
+                        <option value="penthouse">Penthouse</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 price-top">
+                    <h4>Rooms</h4>
+                    <select class="in-drop ddl_rooms" onchange="loadProjects();">
+                        <option value="">No. of Bedrooms</option>
+                        <option value="1">1 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <option value="4+">4+ BHK</option>
+                    </select>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="price-grid">
+                <div class="col-sm-6 price-top1">
+                    <h4>Price Range</h4>
+                    <ul>
+                        <li>
+                            <select class="in-drop ddl_pricefrom" onchange="loadProjects();">
+                                <option value="">Price From</option>
+                                <option value="0">0</option>
+                                <option value="5">5 Lacs </option>
+                                <option value="10">10 Lacs</option>
+                                <option value="15">15 Lacs</option>
+                                <option value="20">20 Lacs</option>
+                                <option value="25">25 Lacs</option>
+                                <option value="30">30 Lacs</option>
+                                <option value="35">35 Lacs</option>
+                                <option value="40">40 Lacs</option>
+                                <option value="45">45 Lacs</option>
+                                <option value="50">50 Lacs</option>
+                                <option value="55">55 Lacs</option>
+                                <option value="60">60 Lacs</option>
+                                <option value="65">65 Lacs</option>
+                                <option value="70">70 Lacs</option>
+                                <option value="75">75 Lacs</option>
+                                <option value="80">80 Lacs</option>
+                                <option value="85">85 Lacs</option>
+                                <option value="90">90 Lacs</option>
+                                <option value="95">95 Lacs</option>
+                            </select>
+                        </li>
+                        <span>-</span>
+                        <li>
+                            <select class="in-drop ddl_priceto" onchange="loadProjects();">
+                                <option value="">Price To</option>
+                                <option value="5">5 Lacs </option>
+                                <option value="10">10 Lacs</option>
+                                <option value="15">15 Lacs</option>
+                                <option value="20">20 Lacs</option>
+                                <option value="25">25 Lacs</option>
+                                <option value="30">30 Lacs</option>
+                                <option value="35">35 Lacs</option>
+                                <option value="40">40 Lacs</option>
+                                <option value="45">45 Lacs</option>
+                                <option value="50">50 Lacs</option>
+                                <option value="55">55 Lacs</option>
+                                <option value="60">60 Lacs</option>
+                                <option value="65">65 Lacs</option>
+                                <option value="70">70 Lacs</option>
+                                <option value="75">75 Lacs</option>
+                                <option value="80">80 Lacs</option>
+                                <option value="85">85 Lacs</option>
+                                <option value="90">90 Lacs</option>
+                                <option value="95">95 Lacs</option>
+                                <option value="100">1 CR</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 price-top1">
+                    <h4>Area</h4>
+                    <ul>
+                        <li>
+                            <select class="in-drop ddl_areafrom" onchange="loadProjects();">
+                                <option value="">Sqmt From</option>
+                                <option value="0">0</option>
+                                <option value="500">500 Sq Ft</option>
+                                <option value="1000">1000 Sq Ft</option>
+                                <option value="1500">1500 Sq Ft</option>
+                                <option value="2000">2000 Sq Ft</option>
+                                <option value="2500">2500 Sq Ft</option>
+                                <option value="3000">3000 Sq Ft</option>
+                                <option value="3500">3500 Sq Ft</option>
+                                <option value="4000">4000 Sq Ft</option>
+                                <option value="4500">4500 Sq Ft</option>
+                            </select>
+                        </li>
+                        <span>-</span>
+                        <li>
+                            <select class="in-drop ddl_areato" onchange="loadProjects();">
+                                <option value="">Sqmt To</option>
+                                <option value="500">500 Sq Ft</option>
+                                <option value="1000">1000 Sq Ft</option>
+                                <option value="1500">1500 Sq Ft</option>
+                                <option value="2000">2000 Sq Ft</option>
+                                <option value="2500">2500 Sq Ft</option>
+                                <option value="3000">3000 Sq Ft</option>
+                                <option value="3500">3500 Sq Ft</option>
+                                <option value="4000">4000 Sq Ft</option>
+                                <option value="4500">4500 Sq Ft</option>
+                                <option value="5000+">5000+ Sq Ft</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!---->
+
+        
+            <div id="commercial" style="margin-top:80px;">
+                <div id="commercialstruc">
+                    <div class="col-md-12" style="margin-bottom: 50px;">
+                        <div class="col-md-4 box_2">
+                            <div style="overflow:hidden;">
+                            <a data-action="property.html/1" class="mask propclick">
+                                <img class="img-responsive zoom-img" style="width:340px;" src="images/property12/v1.jpg" />
+                            </a>
+                                </div>
+                            <div class="most-1">
+                                <h5><a class="propclick" data-action="property.html/12"> EPIC BUSINESS PARK </a></h5>
+                                <!--<p>NAIROBI</p>-->
+                            </div>
+                        </div>
+                        <div class="col-md-4 box_2" style="display:none;">
+                            <div style="overflow:hidden;">
+                            <a data-action="property.html/2" class="mask propclick">
+                                    <img class="img-responsive zoom-img" style="width:340px;" src="images/property2/1V.jpg" alt="">
+                                    <!--<span class="four">{PROPERTYAMOUNT}</span>-->
+                                </a>
+                                </div>
+                                <div class="most-1">
+                                    <h5><a class="propclick" data-action="property.html/2">ZAWADI APARTMENTS</a></h5>
+                                    <p></p>
+                                </div>
+                        </div>
+                        <div class="col-md-4 box_2" style="display:none;">
+                            <div style="overflow:hidden;">
+                                <a data-action="property.html/3" class="mask propclick">
+                                    <img class="img-responsive zoom-img" style="width:340px;" src="images/property4/3V.jpg" alt="">
+                                    <!--<span class="four">{PROPERTYAMOUNT}</span>-->
+                                </a>
+                                </div>
+                                <div class="most-1">
+                                    <h5><a class="propclick" data-action="property.html/3">HYDRO (H2O) LUXURIOUS APARTMENTS </a></h5>
+                                    <p></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>                                        
+                </div>
+            </div>
+
+    </div>
+    
