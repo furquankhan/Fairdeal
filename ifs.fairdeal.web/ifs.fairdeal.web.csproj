@@ -330,6 +330,7 @@
     <Content Include="v1\about.html" />
     <Content Include="v1\career.html" />
     <Content Include="v1\contact.html" />
+    <Content Include="v1\commercial.html" />
     <Content Include="v1\index.html" />
     <Content Include="v1\oldabout.html" />
     <Content Include="v1\oldcareer.html" />
