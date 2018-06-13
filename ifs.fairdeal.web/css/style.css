@@ -1004,7 +1004,7 @@ a.more-in:hover{
 }
  p.para-in{
 	color:#a3a3a3;
-	font-size:1.2em;
+	font-size:0.9em;
 	width: 80%;
 	line-height: 1.6em;
 }
@@ -1077,8 +1077,17 @@ font-family: 'Montserrat-Regular';
 	background:#000;
 	margin: 0 1%;
 }
-.content-bottom1 ul{
-	width:75%;
+.men-para {
+	position: absolute;
+	top: 80%;
+	right: 13%;
+	word-break: break-word;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.content-bottom1 ul {
+	width: 75%;
 	margin: 1em auto 0;
 }
 .content-bottom1 ul li a img{

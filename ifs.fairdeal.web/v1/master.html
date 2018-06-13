@@ -7,30 +7,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fair Deal | Home</title>
-    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../js/jquery.min.js"></script>
-    <!-- Custom Theme files -->
-    <!--menu-->
-    <script src="../js/scripts.js"></script>
-    <link href="../css/styles.css" rel="stylesheet">
-    <!--//menu-->
-    <!--theme-style-->
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <!--//theme-style-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	<title>Fair Deal | Home</title>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<!--menu-->
+	<script src="../js/scripts.js"></script>
+	<link href="../css/styles.css" rel="stylesheet">
+	<!--//menu-->
+	<!--theme-style-->
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- slide -->
-    <script src="../js/responsiveslides.min.js"></script>
-    <script defer src="../js/jquery.flexslider.js"></script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- slide -->
+	<script src="../js/responsiveslides.min.js"></script>
+	<script defer src="../js/jquery.flexslider.js"></script>
 	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
-    <script>
-    var isFirst = true;
+	<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+
+	<link href="../css/jquery.fancybox.css" rel="stylesheet" />
+	<script src="../js/jquery.fancybox.js"></script>
+
+	<script>
+		var isFirst = true;
 		var pid = 0;
 		function init() {
 			var pages = ['index', 'contact', 'about', 'career', 'property', 'residential'];
@@ -54,10 +58,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			LoadPage(hash + ".html");
 
 
-			
+
 		}
 		$(function () {
-		    debugger;
 			window.onpopstate = function () {
 				location.reload();
 			}
@@ -67,16 +70,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				var page = $(this).attr("data-action").replace('.html', '');
 				bindProperty(page);
 			});
-			
-        });
-        
-        function bindPropertyClick()
-		{
-			
-            $(".propclick").unbind("click").bind("click", function(){debugger;
+
+		});
+
+		function bindPropertyClick() {
+
+			$(".propclick").unbind("click").bind("click", function () {
 				var page = $(this).attr("data-action").replace('.html', '');
-				bindProperty(page);                      
-            });
+				bindProperty(page);
+			});
 		}
 		function bindProperty(page) {
 			if (page.indexOf("property/") > -1) {
@@ -92,46 +94,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				window.location.hash = "#" + page;
 			init();
 		}
-        function LoadPage(e){debugger;
-            $.get(e,function(data){
-                if(e == "property.html")
-                {
-                    data = $(data).find('#prop'+pid).append($(data).find('script#propScr'));
-                    $(".mainpage").html('<div class="container"></div>');
+		function LoadPage(e) {
+			$.get(e, function (data) {
+				if (e == "property.html") {
+					data = $(data).find('#prop' + pid).append($(data).find('script#propScr'));
+					$(".mainpage").html('<div class="container"></div>');
 					$(".mainpage .container").html(data);
 					$("#prop" + pid).show();
-                    $('.flexslider').flexslider({
-                        animation: "slide",
-                        controlNav: "thumbnails"
-                    });
-                }
-                else
-                    $(".mainpage").html(data);
+					$('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: "thumbnails"
+					});
+				}
+				else
+					$(".mainpage").html(data);
 				bindPropertyClick();
-                return;
-            });
-        }
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    
-    </script>
+				return;
+			});
+		}
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
 
-    <style>
-        .propclick {
-            cursor:pointer;
-        }
-        .logo {
-            cursor:pointer;
-        }
-    </style>
+	</script>
+
+	<style>
+		.propclick {
+			cursor: pointer;
+		}
+
+		.logo {
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
+
     <div class="header">
         <div class="container">
             <!--logo-->
