@@ -4,7 +4,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
-
+body {
+	font-family: 'Montserrat-Regular' !important;
+}
 .list {
     display: flex;
   justify-content: center;
@@ -78,7 +80,6 @@ h1,h2,h3,h4,h5,h6,label,p{
   	width: 35.285%;
 }
 .banner-bottom-top {
-  	background-color: #F7F7F7;
   	min-height: 80px;
 }
 .bottom-head:nth-child(7) {
@@ -96,20 +97,20 @@ h1,h2,h3,h4,h5,h6,label,p{
   -ms-transition: 0.5s all;
 }
 
-.buy-media{
+.buy-media {
 	position: absolute;
-  bottom: 0;
-  height: 80px;
-  overflow: hidden;
-  padding: 30px;
-    width: 100%;
-  background-color: #737473;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform .2s ease,height .2s ease;
-  -moz-transition: -moz-transform .2s ease,height .2s ease;
-  -o-transition: -o-transform .2s ease,height .2s ease;
-  transition: transform .2s ease,height .2s ease;
+	bottom: 0;
+	height: 80px;
+	overflow: hidden;
+	padding: 30px;
+	width: 100%;
+	background-color: #7873a8;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform .2s ease,height .2s ease;
+	-moz-transition: -moz-transform .2s ease,height .2s ease;
+	-o-transition: -o-transform .2s ease,height .2s ease;
+	transition: transform .2s ease,height .2s ease;
 }
 .bottom-head  h6{
 	color:#fff;
@@ -580,12 +581,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 	 padding: 4em 0 5em;
 }
 .most-1 {
-   background-color: #6e6f71;
-   color: #000;
-   padding: 1em;
+	background-color: #7873a8;
+	color: #000;
+	padding: 1em;
 }
 .most-1 h5{
-   	font-size: 1.2em;
+   	font-size: 1.0em;
   	color: #27DA93;
   	padding: 0em 0 0.3em;
     font-family: 'Montserrat-Regular';
@@ -806,8 +807,7 @@ a.mask {
 }
 .text-1 p {
   	color: #000;
-  	font-size: 1.2em;
-  	line-height: 2em;
+  	font-size: 0.9em;
   	width:85%;
 }
 .phone {
@@ -1190,14 +1190,14 @@ transform: rotatey(360deg);
 }
 /*--buy--*/
 .banner-buying {
-  background: url(../images/4.jpg) no-repeat;
-  width: 100%;
-  background-position:0px;
-  min-height: 390px;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+	background: url(../images/4.jpg) no-repeat;
+	width: 100%;
+	background-position: 0px -470px;
+	min-height: 390px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 .banner-buying h3{
 	color: #fff;
@@ -2280,8 +2280,7 @@ font-family: 'Montserrat-Regular';
   	color: #27DA93;
 }
 .phone .container h1 {
-    font-size: 56px;
-    font-weight: bolder;
+    font-size: 3em;
 }
 .about-bottom h1 {
     color:white;
@@ -2295,31 +2294,29 @@ font-family: 'Montserrat-Regular';
 
 }
 .about-bottom h4 {
-    color:white !important;
-    font-size:14px !important;
+    font-size:16px !important;
 
 }
 .about-in h6 a:hover{
   	color: #000;
 }
 .about-in ul {
-    list-style-type: disc;
-    font-size: 0.9em;
-    text-align:left;
-  	color: #000;
-  	padding: 0.3em 0 0;
-  	width: 66%;
-  	margin: 0 auto;
-  	line-height: 2em;
-}
-.about-in p{
+	list-style-type: disc;
 	font-size: 0.9em;
-    text-align:left;
-  	color: #000;
-  	padding: 0.3em 0 0;
-  	width: 70%;
-  	margin: 0 auto;
-  	line-height: 2em;
+	text-align: left;
+	color: #a3a3a3;
+	padding: 0.3em 0 0;
+	width: 66%;
+	margin: 0 auto;
+	line-height: 2em;
+}
+.about-in p {
+	font-size: 0.9em;
+	text-align: left;
+	color: #a3a3a3;
+	width: 70%;
+	margin: 0 auto;
+	line-height: 2em;
 }
 .about-in img{
 	margin: 0 auto;
